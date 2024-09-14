@@ -5,9 +5,43 @@ Welcome to the **Data Structures & Algorithms (DSA) Repository**! This repositor
 ## Repository Structure
 
 The repository is organized as follows:
+
 ```
-├── mentees/ │ ├── mentee1/ │ │ ├── README.md │ │ ├── algorithms/ │ │ │ ├── sorting/ │ │ │ │ ├── bubble_sort.py │ │ │ │ ├── quick_sort.py │ │ │ └── searching/ │ │ │ ├── binary_search.py │ │ │ └── linear_search.py │ │ ├── data_structures/ │ │ │ ├── linked_list.py │ │ │ ├── stack.py │ │ │ └── queue.py │ │ ├── tests/ │ │ │ ├── test_algorithms.py │ │ │ └── test_data_structures.py │ ├── mentee2/ │ ├── menteeN/ ├── mother_repo_code/ │ ├── algorithms/ │ ├── data_structures/ │ ├── tests/ └── utils/ └── helper_functions.py
+├── README.md
+├── CONTRIBUTING.md
+├── LICENSE
+├── .gitignore
+├── mentees/
+│   ├── mentee1/
+│   │   ├── README.md
+│   │   ├── algorithms/
+│   │   │   ├── sorting/
+│   │   │   │   ├── bubble_sort.py
+│   │   │   │   ├── quick_sort.py
+│   │   │   └── searching/
+│   │   │       ├── binary_search.py
+│   │   │       └── linear_search.py
+│   │   ├── data_structures/
+│   │   │   ├── linked_list.py
+│   │   │   ├── stack.py
+│   │   │   └── queue.py
+│   │   ├── tests/
+│   │   │   ├── test_algorithms.py
+│   │   │   └── test_data_structures.py
+│   ├── mentee2/
+│   │   ├── README.md
+│   │   ├── algorithms/
+│   │   └── data_structures/
+│   │   └── tests/
+│   └── menteeN/
+│       ├── README.md
+│       ├── algorithms/
+│       └── data_structures/
+├── learnings/
+│   ├── algorithms/
+│   └── data_structures/
 ```
+
 
 ### Folder Breakdown:
 - **`mentees/`**: Each mentee will have their own folder where they can submit their solutions to the various DSA problems. Mentees will create their folder here under their username.
