@@ -1,0 +1,49 @@
+Problem 1 :-
+
+You are climbing a staircase. It takes n steps to reach the top.
+
+Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+
+Example 1:
+
+Input: n = 2
+Output: 2
+Explanation: There are two ways to climb to the top.
+1. 1 step + 1 step
+2. 2 steps
+Example 2:
+
+Input: n = 3
+Output: 3
+Explanation: There are three ways to climb to the top.
+1. 1 step + 1 step + 1 step
+2. 1 step + 2 steps
+3. 2 steps + 1 step
+
+
+
+Problem 2 :-
+
+Given an integer array nums and an integer k, return the kth largest element in the array.
+
+Note that it is the kth largest element in the sorted order, not the kth distinct element.
+
+Example 1:
+
+Input: nums = [3,2,1,5,6,4], k = 2
+Output: 5
+Example 2:
+
+Input: nums = [3,2,3,1,2,4,5,5,6], k = 4
+Output: 4
+
+Problem 3:-
+
+Given an array of integers. Find the numbers whose occurence in the array is odd. 
+
+Note: Integers are from 0 to 100 and length of array is greater than the max value in Array
+
+For eg: 
+Input: [1,3,4,2,4,1,4]
+
+Output: [3,4,2]; Since 3 & 2 is repeated once, 4 is repeated three times.
