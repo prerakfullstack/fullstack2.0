@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 12</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h1 style="text-align:center ;color: cadetblue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">User Details as Fetched from the API.</h1>
+<table id="userTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Company Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <br />
+    </tbody>
+</table>
+
+<script>
+
+const fetchUserData = async () => {
+    const url = 'https://jsonplaceholder.typicode.com/users';
+    
+    try {
+        const response = await fetch(url);
+        
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        const users = await response.json();
+        
+        const tbody = document.getElementById('userTable').querySelector('tbody');
+        users.forEach(user => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${user.name}</td>
+                <td>${user.email}</td>
+                <td>${user.phone}</td>
+                <td>${user.company.name}</td>
+            `;
+            tbody.appendChild(row);
+        });
+        
+    } catch (error) {
+        console.error('Error fetching user data:', error);
+        alert('Failed to fetch user data. Please try again later.');
+    }
+};
+
+fetchUserData();
+</script>
+
+</body>
+</html>
