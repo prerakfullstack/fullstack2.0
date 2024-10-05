@@ -1,0 +1,20 @@
+body {
+    background-color: #ccc;
+  }
+  h1 {
+    color: chocolate;
+    font-size: 48px;
+    text-align: center;
+  }
+  h2 {
+   color: tomato;
+   text-align: center;
+  }
+  h3 {
+    color: tomato;
+    text-align: center;
+  }
+  h4 {
+    color: teal;
+    text-align: center;
+  }

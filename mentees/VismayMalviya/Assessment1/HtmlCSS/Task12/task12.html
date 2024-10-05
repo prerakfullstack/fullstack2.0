@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 12</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .main-tabs {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .column {
+            flex: 1;
+            min-width: 250px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+        @media (max-width: 1024px) {
+            .column {
+                flex: 0 0 50%;
+            }
+        }
+        @media (max-width: 768px) {
+            .column {
+                flex: 0 0 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Logo</div>
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main class="main-tabs">
+        <div class="column">TAB 1</div>
+        <div class="column">TAB 2</div>
+        <div class="column">TAB 3</div>
+    </main>
+
+    <footer class="footer">
+        &copy; 2024 All Rights Reserved.
+    </footer>
+</body>
+</html>

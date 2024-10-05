@@ -1,0 +1,128 @@
+<!-- THIS TASK HAS BEEN COMPLETED AFTER CHECKING OUT A LOT OF REFERENCES, 
+ IT IS NOT COMPLETELY MADE OUT OF MY KNOWLEDGE,
+  I STILL NEED TO BRUSH UP MANY CONCEPTS FOR THIS PARTICULAR TASK -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 13</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 300px;
+        }
+        button {
+            padding: 10px;
+            margin-left: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-top: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Todo List</h1>
+<input type="text" id="todoInput" placeholder="Add a new task...">
+<button id="addButton">Add</button>
+
+<ul id="todoList"></ul>
+
+<script>
+const todoInput = document.getElementById('todoInput');
+const addButton = document.getElementById('addButton');
+const todoList = document.getElementById('todoList');
+
+document.addEventListener('DOMContentLoaded', loadTodos);
+
+addButton.addEventListener('click', addTodo);
+
+function loadTodos() {
+    const todos = JSON.parse(localStorage.getItem('todos')) || [];
+    todos.forEach(todo => {
+        createTodoElement(todo.text, todo.completed);
+    });
+}
+
+function addTodo() {
+    const todoText = todoInput.value.trim();
+    
+    if (todoText === '') {
+        alert("You must write something!");
+        return;
+    }
+
+    createTodoElement(todoText);
+    saveTodoToLocalStorage(todoText);
+    todoInput.value = ''; 
+}
+
+function createTodoElement(text, completed = false) {
+    const li = document.createElement('li');
+    li.textContent = text;
+
+    const editButton = document.createElement('button');
+    editButton.textContent = 'Edit';
+    editButton.onclick = () => editTodo(li);
+    
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    deleteButton.onclick = () => deleteTodo(li);
+
+    li.appendChild(editButton);
+    li.appendChild(deleteButton);
+
+    if (completed) {
+        li.classList.add('completed');
+    }
+
+    todoList.appendChild(li);
+}
+
+function saveTodoToLocalStorage(todoText) {
+    const todos = JSON.parse(localStorage.getItem('todos')) || [];
+    todos.push({ text: todoText, completed: false });
+    localStorage.setItem('todos', JSON.stringify(todos));
+}
+
+function deleteTodo(todoElement) {
+    const todos = JSON.parse(localStorage.getItem('todos')) || [];
+    
+    const updatedTodos = todos.filter(todo => todo.text !== todoElement.textContent.replace('EditDelete', '').trim());
+    
+    localStorage.setItem('todos', JSON.stringify(updatedTodos));
+    
+    todoList.removeChild(todoElement);
+}
+
+function editTodo(todoElement) {
+    const newText = prompt("Edit your task:", todoElement.firstChild.textContent);
+    
+    if (newText !== null && newText.trim() !== '') {
+        const todos = JSON.parse(localStorage.getItem('todos')) || [];
+        
+        const updatedTodos = todos.map(todo => 
+            todo.text === todoElement.firstChild.textContent ? { ...todo, text: newText } : todo
+        );
+
+        localStorage.setItem('todos', JSON.stringify(updatedTodos));
+        
+        todoElement.firstChild.textContent = newText;
+    }
+}</script>
+
+</body>
+</html>

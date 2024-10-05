@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 2</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #edf2f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+        .form-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 1 4px 20px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            padding: 44px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .gender-group,
+        .hobbies-group {
+            margin-bottom: 15px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            transition: border-color 0.3s ease;
+        }
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="date"]:focus,
+        input[type="password"]:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h2 style="text-align: center;">Register Here!</h2>
+        <form action="" method="get">
+            <div>
+                <label for="name">Enter your Name :</label>
+                <input type="text" name="name" id="name" required />
+            </div>
+            <div>
+                <label for="email">Enter your Email :</label>
+                <input type="email" name="email" id="email" required />
+            </div>
+            <div>
+                <label for="dob">Select your Date of Birth :</label>
+                <input type="date" name="dob" id="dob" required />
+            </div>
+            <div>
+                <label for="password">Set your Password :</label>
+                <input type="password" name="password" id="password" required />
+            </div>
+
+            <div class="gender-group">
+                <label>Select your Gender :</label>
+                <input type="radio" name="gender" id="male" value="male" required /> Male
+                <input type="radio" name="gender" id="female" value="female" required /> Female
+            </div>
+
+            <div class="hobbies-group">
+                <label>Select your Hobby Type :</label>
+                <input type="radio" name="hobby" id="indoor" value="indoor" required /> Indoor
+                <input type="radio" name="hobby" id="outdoor" value="outdoor" required /> Outdoor
+                <input type="radio" name="hobby" id="both" value="both" required /> Both
+                <input type="radio" name="hobby" id="none" value="none" required /> None
+            </div>
+
+            <div>
+                <input type="submit" value="Register Yourself!" />
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
