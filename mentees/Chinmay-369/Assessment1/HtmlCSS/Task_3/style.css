@@ -1,0 +1,24 @@
+.para1{
+    color: orange;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+.para2{
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+}
+.para3{
+    color: blueviolet;
+    font-family: cursive;
+    font-size: xx-large;
+}
+h1{
+    color: brown;
+}
+h2{
+    color: green;
+}
+h3{
+    color: yellow
+}
