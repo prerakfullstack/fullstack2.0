@@ -1,0 +1,27 @@
+.div-out{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.div-in {
+    margin: 20px;
+    padding: 15px;
+    background-color: aquamarine;
+    color: red;
+    width: 300;
+}
+
+section{
+    width: 400px;
+    height: 600px;
+    background-color: #e0e0e0;
+    border: 2px solid #888;
+    border-radius: 5px;
+    text-align: center;
+}
+
+img{
+    width: 300px;
+    height: 400px;
+}

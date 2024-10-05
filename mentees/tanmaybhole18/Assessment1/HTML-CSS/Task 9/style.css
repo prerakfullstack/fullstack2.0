@@ -1,0 +1,13 @@
+.div3{
+    height: 75px; 
+    background-color: rgb(205, 50, 146);  
+    width: 300px;
+    margin: 25px;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.maindiv{
+    display: flex;
+    justify-content: space-evenly;
+}
