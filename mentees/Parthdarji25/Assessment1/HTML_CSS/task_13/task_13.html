@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task_13_CSS Grid Layout</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+
+      .grid-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 20px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 50px auto;
+        background-color: #fff;
+      }
+
+      .grid-item {
+        padding: 20px;
+        border: 2px solid #ccc;
+        background-color: #fafafa;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .item-1 {
+        background-color: #ffcccb;
+        grid-column: 1 / 3; /* Span across both columns */
+        text-align: center;
+      }
+
+      .item-2 {
+        background-color: #cce5ff;
+      }
+
+      .item-3 {
+        background-color: #d4edda;
+      }
+
+      .item-4 {
+        background-color: #fff3cd;
+      }
+
+      .item-5 {
+        background-color: #e2e3e5;
+      }
+
+      .item-6 {
+        background-color: #f8d7da;
+        grid-column: 1 / 3; /* Span across both columns */
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="grid-section">
+      <div class="grid-item item-1">Header Content</div>
+      <div class="grid-item item-2">Image or Video Content</div>
+      <div class="grid-item item-3">Text Content</div>
+      <div class="grid-item item-4">List of Features</div>
+      <div class="grid-item item-5">Call to Action</div>
+      <div class="grid-item item-6">Footer Links</div>
+    </section>
+  </body>
+</html>

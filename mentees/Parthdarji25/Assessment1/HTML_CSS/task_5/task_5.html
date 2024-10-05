@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task_5_ HTML Tables</title>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Students Data Sheet
+      </caption>
+      <thead>
+        <tr>
+          <th>Student Name</th>
+          <th>Age</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Peter</td>
+          <td>18</td>
+          <td>A+</td>
+        </tr>
+        <tr>
+          <td colspan="2">Top Performer in Class</td>
+        </tr>
+        <tr>
+          <td>Lois</td>
+          <td>20</td>
+          <td>A+</td>
+        </tr>
+        <tr>
+          <td>Joe</td>
+          <td>22</td>
+          <td>E</td>
+        </tr>
+        <tr>
+          <td>Cleveland</td>
+          <td>15</td>
+          <td>F</td>
+        </tr>
+        <tr>
+          <td>Levis</td>
+          <td>30</td>
+          <td>C</td>
+        </tr>
+        <tr>
+          <td>Rajesh</td>
+          <td>25</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <td>Pritam</td>
+          <td>34</td>
+          <td>F</td>
+        </tr>
+        <tr>
+          <td>Lalu</td>
+          <td>22</td>
+          <td>C</td>
+        </tr>
+        <tr>
+          <td>Camio</td>
+          <td>21</td>
+          <td>E</td>
+        </tr>
+        <tr>
+          <td>Hariya</td>
+          <td>29</td>
+          <td>A+</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">End of Student List</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
+<style>
+  table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+  }
+
+  th,
+  td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  tr:hover {
+    background-color: #d6eeee;
+  }
+
+  tfoot td {
+    font-weight: bold;
+  }
+</style>

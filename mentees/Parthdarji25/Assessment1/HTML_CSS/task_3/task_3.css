@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.heading_main {
+  text-align: center;
+  background-color: aliceblue;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.sub_heading_1 {
+  color: orange;
+  width: 180px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 25px;
+}
+.sub_heading_2 {
+  color: orange;
+  width: 180px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 25px;
+}
+
+.sub_heading_3 {
+  color: orange;
+  width: 180px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 25px;
+}
+
+.sub_heading_4 {
+  color: rgb(85, 54, 236);
+  width: 180px;
+}
+
+.para_1 {
+  font-size: 18px;
+}
+
+.para_2 {
+  font-size: 18px;
+}
+
+.para_3 {
+  font-size: 18px;
+}
+
+.para_1 i {
+  color: rgb(241, 98, 21);
+  font-size: 18px;
+}
+
+.para_2 i {
+  color: darkgoldenrod;
+  font-size: 18px;
+}
+
+.para_3 i {
+  color: rgb(231, 171, 22);
+  font-size: 18px;
+}
+
+.para_3 del {
+  color: red;
+}
+
+.para_3 ins {
+  color: green;
+}
