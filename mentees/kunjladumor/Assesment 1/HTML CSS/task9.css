@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+header {
+  padding: 1rem;
+  background-color: lightblue;
+}
+nav {
+  background-color: lightcoral;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: lightgreen;
+}
+footer {
+  background-color: lightseagreen;
+}
