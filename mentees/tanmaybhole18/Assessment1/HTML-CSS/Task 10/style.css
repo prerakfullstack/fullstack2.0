@@ -1,0 +1,26 @@
+header{
+    background-color: blueviolet;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+div{
+    border: 2px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: aquamarine;
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+img{
+    height: 600px;
+    position: absolute;
+    
+}

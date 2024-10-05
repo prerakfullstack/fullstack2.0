@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+                border-color: blue;
+                margin-top: 20px;
+                width: 300px;
+        }
+        legend{
+            color: red;
+            font-size: 18px;
+        }
+        form{
+            font-size: 16px; 
+        }
+    </style>
+</head>
+<body>
+<fieldset>   
+    <legend>Registration Form</legend>
+    <form  action="/Task 1/index.html" method="get">
+        <label >Name : </label>
+        <input type="text" placeholder="Enter your Name" required>
+        <br>
+        <br>
+        <label >Email : </label>
+        <input type="text" placeholder="Enter your Email" required >
+        <br>
+        <br>
+        <label >Date of Birth : </label>
+        <input type="date" >
+        <br>
+        <br>
+        <label >Password</label>
+        <input type="password" placeholder="Enter your Password">
+        <br>
+        <br>
+        <label >Gender</label>
+
+            <input type="radio" id="Male" name="Gender" >
+            <label for="Male">Male</label>
+       
+            <input type="radio"  id="Female" name="Gender">
+            <label for="Female">Female</label> 
+        <br>
+        <br>
+        <label >Hobbies</label>
+        <br>
+       
+          <input type="checkbox" id="Cricket" name="hobbies" />
+          <label for="Cricket">Cricket</label>
+          <input type="checkbox" id="Football" name="hobbies" />
+          <label for="Football">Football</label>
+          <input type="checkbox" id="Gym" name="hobbies" />
+          <label for="Gym">Gym</label>
+        <br>
+        <br>
+        <button >Submit</button>
+    
+    </form>
+</fieldset>
+
+</body>
+</html>
