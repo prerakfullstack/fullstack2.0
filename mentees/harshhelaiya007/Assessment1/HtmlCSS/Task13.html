@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 13</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(3, 200px);
+            gap: 10px;
+        }
+
+        .grid-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item">Content 1</div>
+        <div class="grid-item">Content 2</div>
+        <div class="grid-item">Content 3</div>
+        <div class="grid-item">Content 4</div>
+        <div class="grid-item">Content 5</div>
+        <div class="grid-item">Content 6</div>
+    </div>
+
+</body>
+
+</html>
