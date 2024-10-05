@@ -1,0 +1,14 @@
+table{
+    border: 5px solid blueviolet;
+    border-radius: 8px;
+    padding: 5px;
+}
+th{
+    padding: 10px;
+}
+td{
+    padding: 20px;
+}
+tfoot{
+    font-weight: bold;
+}
