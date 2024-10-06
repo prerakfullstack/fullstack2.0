@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Starter</title>
+</head>
+<body>
+    <h1>Start Your Car</h1>
+    <button id="startButton">Start Engine</button>
+
+    <script>
+        const car = {
+            make: "Toyota",
+            model: "Corolla",
+            year: 2023,
+            startEngine: function() {
+                alert("Engine started!");
+                console.log("Engine started!");
+            }
+        };
+
+        // Using events 
+        document.getElementById('startButton').addEventListener('click', function() {
+            car.startEngine();
+        });
+    </script>
+</body>
+</html>

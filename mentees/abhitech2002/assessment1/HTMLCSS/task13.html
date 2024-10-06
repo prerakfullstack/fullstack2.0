@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      .grid-container {
+        display: grid;
+        border: 1px solid black;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+        padding: 20px;
+      }
+
+      .grid-item {
+        padding: 20px;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        text-align: center;
+      }
+
+      .item1 {
+        background-color: #ffdddd;
+      }
+
+      .item2 {
+        background-color: #ddeeff;
+      }
+
+      .item3 {
+        background-color: #ddffdd;
+      }
+
+      .item4 {
+        background-color: #fff0aa;
+      }
+
+      .item5 {
+        background-color: #f7e1ff;
+      }
+
+      .item6 {
+        background-color: #ffe0e0;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="grid-container">
+      <div class="grid-item item1">Item 1: Welcome Text</div>
+      <div class="grid-item item2">Item 2: Image</div>
+      <div class="grid-item item3">Item 3: Article</div>
+      <div class="grid-item item4">Item 4: Services List</div>
+      <div class="grid-item item5">Item 5: Contact Form</div>
+      <div class="grid-item item6">Item 6: Footer</div>
+    </section>
+  </body>
+</html>

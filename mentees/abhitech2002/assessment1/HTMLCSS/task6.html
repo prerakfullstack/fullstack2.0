@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline and Block Element</title>
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        li {
+            margin-right: 20px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Block and Inline Element Layouts</h1>
+
+        <div>
+            <h2>Main Content</h2>
+            <p>This is the main content area of our webpage.</p>
+            <p><span>It uses both block and inline elements:</span></p>
+            <ul>
+                <li>Block-level elements: <span>p, h2, div</span></li>
+                <li>Inline elements: <span>span, strong, em</span></li>
+            </ul>
+            <p>Notice how the unordered list appears horizontally due to the CSS styling.</p>
+        </div>
+
+        <aside>
+            <h2>Sidebar</h2>
+            <p>This is a sidebar containing additional information.</p>
+        </aside>
+    </div>
+</body>
+</html>

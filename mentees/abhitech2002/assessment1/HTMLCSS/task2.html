@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      .field-group {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Registration Form</h1>
+    </header>
+    <section>
+      <form action="#" method="post">
+        <div class="field-group">
+          <label for="name"><b>Name:</b></label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name."
+            required
+          />
+        </div>
+
+        <div class="field-group">
+          <label for="email"><b>Email:</b></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email id"
+            required
+          />
+        </div>
+
+        <div class="field-group">
+          <label for="dob"><b>Date of Birth:</b></label>
+          <input
+            type="text"
+            id="dob"
+            name="dob"
+            placeholder="Enter you DOB."
+            required
+          />
+        </div>
+
+        <div class="field-group">
+          <label for="password"><b>Password</b></label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            required
+            placeholder="Enter you password"
+          />
+        </div>
+
+        <div class="field-group">
+          <label for="gender"><b>Gender:</b></label>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male"><b>Male</b></label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">F<b>emale</b></label>
+          <input type="radio" id="other" name="gender" value="other" />
+          <label for="other"><b>Other</b></label>
+        </div>
+
+        <div class="field-group">
+          <label for="hobbies"><b>Hobbies:</b></label>
+          <input type="checkbox" id="reading" name="hobbies" value="reading" />
+          <label for="reading"><b>Reading</b></label>
+          <input
+            type="checkbox"
+            id="swimming"
+            name="hobbies"
+            value="swimming"
+          />
+          <label for="swimming"><b>Swimming</b></label>
+          <input type="checkbox" id="coding" name="hobbies" value="coding" />
+          <label for="coding"><b>Coding</b></label>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
