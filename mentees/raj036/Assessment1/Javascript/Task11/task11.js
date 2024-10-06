@@ -32,10 +32,10 @@ saveNameButton.addEventListener("click", () => {
 const clearNameButton = document.getElementById("clearNameButton");
 clearNameButton.addEventListener("click", () => {
     localStorage.removeItem("userName");
-    location.reload(); // Reload the page to reset the state
+    location.reload();
 });
 
-// On page load, display the stored name (if available)
+
 window.onload = displayUserName;
 
 
