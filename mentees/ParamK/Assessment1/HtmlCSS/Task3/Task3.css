@@ -1,0 +1,32 @@
+.para-one {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    color: red;
+}
+
+.para-two {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: blue;
+}
+
+.para-three {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: green;
+}
+
+.heading-one {
+    font-size: 22px;
+    color: red;
+}
+
+.heading-two {
+    font-size: 24px;
+    color: blue;
+}
+
+.heading-three {
+    font-size: 26px;
+    color: green;
+}

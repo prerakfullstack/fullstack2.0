@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 2rem;
+}
+
+iframe {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    iframe {
+        max-width: 50rem;
+        margin: auto;
+    }
+}
