@@ -1,0 +1,42 @@
+/* styles.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+#header {
+  text-align: center;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.container p {
+  font-size: 16px;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-size: 24px;
+  color: #444;
+}
+
+/* Pseudo-class selector */
+a:hover {
+  color: red;
+}

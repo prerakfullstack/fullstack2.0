@@ -1,0 +1,23 @@
+.styled-div {
+  margin: 20px;
+  padding: 15px;
+  background-color: lightblue;
+  border: 2px solid darkblue;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.styled-section {
+  background-color: lightgreen;
+  border: 2px solid darkgreen;
+  margin: 20px auto;
+  width: 90%;
+  height: 50vh;
+  max-width: 600px;
+  max-height: 400px;
+  text-align: center;
+}
+
+.para_styled {
+  margin-top: 20%;
+}

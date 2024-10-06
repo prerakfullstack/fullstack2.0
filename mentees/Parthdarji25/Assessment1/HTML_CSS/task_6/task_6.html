@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task_6_ Block and Inline Elements, Divs, Lists</title>
+  </head>
+  <body
+    style="
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    "
+  >
+    <!-- Header with inline styles -->
+    <header
+      style="
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 5px;
+      "
+    >
+      <div>
+        <img
+          src="../task_6/hpym25.jpg"
+          alt=""
+          style="width: 40px; border-radius: 10%"
+        />
+      </div>
+      <h1 style="margin: 0">We Are For HPYM 2025</h1>
+    </header>
+
+    <!-- Navigation Menu with inline styles -->
+    <nav style="background-color: #444">
+      <ul
+        style="
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: space-around;
+        "
+      >
+        <li style="margin: 0">
+          <a
+            href="#"
+            style="
+              color: white;
+              text-decoration: none;
+              padding: 15px;
+              display: block;
+            "
+            >Home</a
+          >
+        </li>
+        <li style="margin: 0">
+          <a
+            href="#"
+            style="
+              color: white;
+              text-decoration: none;
+              padding: 15px;
+              display: block;
+            "
+            >Smurti's</a
+          >
+        </li>
+        <li style="margin: 0">
+          <a
+            href="#"
+            style="
+              color: white;
+              text-decoration: none;
+              padding: 15px;
+              display: block;
+            "
+            >Prasangs</a
+          >
+        </li>
+        <li style="margin: 0">
+          <a
+            href="#"
+            style="
+              color: white;
+              text-decoration: none;
+              padding: 15px;
+              display: block;
+            "
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main content section with inline styles -->
+    <div style="padding: 20px">
+      <h2 style="margin-top: 0">About Us</h2>
+      <p style="font-size: 1.1em; line-height: 1.6">
+        HPYM 2025 is a youth empowerment event associated with Hari Prabodham:
+        <span style="color: #0056b3; font-style: italic">Theme </span>Some posts
+        about HPYM 2025 encourage people to embrace inner peace and divine
+        happiness.
+      </p>
+      <p style="line-height: 1.6">
+        Take a look around and explore. Spiritual journey Some about HPYM 2025
+        mention the idea of a journey and divine presence
+      </p>
+    </div>
+
+    <!-- Footer section with inline styles -->
+    <footer
+      style="
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      "
+    >
+      <p style="margin: 0">
+        &copy; Saral Mandal - Mira Bhayandar. All Rights Reserved.
+      </p>
+    </footer>
+
+    <style>
+      @media (max-width: 600px) {
+        nav ul {
+          flex-direction: column;
+        }
+
+        nav ul li a {
+          text-align: center;
+          padding: 10px;
+        }
+
+        footer {
+          position: static;
+        }
+      }
+    </style>
+  </body>
+</html>

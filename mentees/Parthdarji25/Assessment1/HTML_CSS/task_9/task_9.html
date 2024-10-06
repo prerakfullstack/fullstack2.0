@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task_9_CSS Selectors and Styling (Internal, External, Inline)</title>
+    <link rel="stylesheet" href="task_9.css" />
+
+    <style>
+      input[type="text"] {
+        border: 1px solid #333;
+        padding: 5px;
+        width: 100%;
+      }
+
+      input[type="text"]:focus {
+        border-color: blue;
+        background-color: #f0f8ff;
+      }
+
+      button {
+        background-color: #008cba;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #005f73;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Welcome to CSS Styling Guidance.</h1>
+    </div>
+
+    <div class="container">
+      <h2 style="text-align: center">CSS Styling Methods</h2>
+
+      <p
+        style="
+          color: red;
+          font-size: 18px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        "
+      >
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam
+        voluptate, odit atque similique earum corporis impedit aut ex assumenda
+        provident unde expedita amet magni quaerat officia temporibus
+        reiciendis. Nihil, facilis.
+      </p>
+
+      <p
+        style="
+          color: green;
+          font-size: 18px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        "
+      >
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim unde sunt
+        facere laudantium similique atque! Rem, ipsa, suscipit dolores
+        perferendis nobis ullam debitis perspiciatis harum fuga vero, molestias
+        quibusdam iure.
+      </p>
+
+      <!-- Inline style for a button -->
+      <button style="font-size: 18px">Click Me!</button>
+
+      <h2>Sign Up Form</h2>
+      <form>
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" /><br /><br />
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <h2>Useful Links</h2>
+      <a href="#">Read More...</a>
+    </div>
+  </body>
+</html>

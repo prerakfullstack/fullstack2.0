@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task_2_Forms and Input Types.</title>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <form action="/submit_registration" method="POST">
+      <!-- Name Field -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <!-- Email Field -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <!-- Date of Birth Field -->
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required />
+
+      <!-- Password Field -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+
+      <!-- Gender Field (Radio buttons) -->
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" required />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" required />
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="other" required />
+      <label for="other">Other</label>
+
+      <!-- Hobbies Field (Checkboxes) -->
+      <label>Hobbies:</label>
+      <input
+        type="checkbox"
+        id="reading"
+        name="hobbies"
+        value="reading"
+        required
+      />
+      <label for="reading">Reading</label>
+      <input
+        type="checkbox"
+        id="traveling"
+        name="hobbies"
+        value="traveling"
+        required
+      />
+      <label for="traveling">Traveling</label>
+      <input
+        type="checkbox"
+        id="sports"
+        name="hobbies"
+        value="sports"
+        required
+      />
+      <label for="sports">Sports</label>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  button[type="submit"] {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+</style>
