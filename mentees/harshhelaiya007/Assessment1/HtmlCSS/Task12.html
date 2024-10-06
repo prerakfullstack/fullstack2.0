@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 12</title>
+
+    <style>
+        header {
+            border: 1px solid;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navigation {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        main {
+            border: 1px solid;
+        }
+
+        .wrapper .tabSection {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        footer {
+            border: 1px solid;
+        }
+
+        @media (min-width:769px) and (max-width:1024px) {
+            .wrapper .tabSection {
+                flex-wrap: wrap;
+                width: 100%;
+            }
+
+            .wrapper .tabSection .wrap:nth-child(1) {
+                flex: 0.5;
+            }
+            .wrapper .tabSection .wrap:nth-child(2) {
+                flex: 0.5;
+            }
+        }
+
+        @media screen and (max-width:767px) {
+            .wrapper .tabSection {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            Logo
+        </div>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="wrapper">
+
+            <div class="tabSection">
+                <div class="wrap">
+                    <span>Tab 1</span>
+                    <div class="container">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo cum veniam doloremque eveniet
+                            laboriosam corrupti ipsum modi excepturi, ea repellendus iure ipsa quidem quis, minima quia,
+                            vitae numquam saepe! Tempora.</p>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <span>Tab 2</span>
+                    <div class="container">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo cum veniam doloremque eveniet
+                            laboriosam corrupti ipsum modi excepturi, ea repellendus iure ipsa quidem quis, minima quia,
+                            vitae numquam saepe! Tempora.</p>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <span>Tab 3</span>
+                    <div class="container">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo cum veniam doloremque eveniet
+                            laboriosam corrupti ipsum modi excepturi, ea repellendus iure ipsa quidem quis, minima quia,
+                            vitae numquam saepe! Tempora.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        Copyright@2024
+    </footer>
+
+</body>
+
+</html>
