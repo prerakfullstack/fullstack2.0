@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flexbox Layout with Sticky Footer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f2f2f2;
+            overflow: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #007BFF;
+            color: white;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            flex: 1;
+            overflow-y: auto;
+
+        }
+
+        .column {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: white;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            width: 100%;
+            position: relative;
+        }
+
+
+        @media (max-width: 1024px) {
+            .column {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .column {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">My Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="column">
+            <h2>Tab 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat blanditiis, nam beatae eum quia sequi
+                alias autem nihil harum optio ut dicta minus. Optio iure quasi recusandae possimus aut. Ipsum! Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Fugit minima sequi impedit nesciunt asperiores minus
+                itaque perspiciatis cupiditate omnis consequatur natus commodi, aspernatur saepe voluptates quisquam,
+                pariatur nam, neque est? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse fuga dignissimos
+                similique? Assumenda explicabo molestiae dolores ab expedita consequuntur hic quo suscipit? Quisquam
+                aliquam corrupti aliquid! Eos non enim dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quos ex obcaecati minus vel illum accusamus dicta. Dolorum perferendis, voluptas, necessitatibus ad
+                illum architecto dolores pariatur voluptatem inventore numquam nostrum nulla? Lorem ipsum dolor, sit
+                amet consectetur adipisicing elit. A eos consectetur impedit assumenda dicta. Natus non laborum unde?
+                Obcaecati aut corporis eos praesentium provident enim voluptas totam tempora accusamus? Ea.</p>
+        </div>
+        <div class="column">
+            <h2>Tab 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat blanditiis, nam beatae eum quia sequi
+                alias autem nihil harum optio ut dicta minus. Optio iure quasi recusandae possimus aut. Ipsum! Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Fugit minima sequi impedit nesciunt asperiores minus
+                itaque perspiciatis cupiditate omnis consequatur natus commodi, aspernatur saepe voluptates quisquam,
+                pariatur nam, neque est? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse fuga dignissimos
+                similique? Assumenda explicabo molestiae dolores ab expedita consequuntur hic quo suscipit? Quisquam
+                aliquam corrupti aliquid! Eos non enim dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quos ex obcaecati minus vel illum accusamus dicta. Dolorum perferendis, voluptas, necessitatibus ad
+                illum architecto dolores pariatur voluptatem inventore numquam nostrum nulla? Lorem ipsum dolor, sit
+                amet consectetur adipisicing elit. A eos consectetur impedit assumenda dicta. Natus non laborum unde?
+                Obcaecati aut corporis eos praesentium provident enim voluptas totam tempora accusamus? Ea.</p>
+        </div>
+        <div class="column">
+            <h2>Tab 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat blanditiis, nam beatae eum quia sequi
+                alias autem nihil harum optio ut dicta minus. Optio iure quasi recusandae possimus aut. Ipsum! Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Fugit minima sequi impedit nesciunt asperiores minus
+                itaque perspiciatis cupiditate omnis consequatur natus commodi, aspernatur saepe voluptates quisquam,
+                pariatur nam, neque est? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse fuga dignissimos
+                similique? Assumenda explicabo molestiae dolores ab expedita consequuntur hic quo suscipit? Quisquam
+                aliquam corrupti aliquid! Eos non enim dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quos ex obcaecati minus vel illum accusamus dicta. Dolorum perferendis, voluptas, necessitatibus ad
+                illum architecto dolores pariatur voluptatem inventore numquam nostrum nulla? Lorem ipsum dolor, sit
+                amet consectetur adipisicing elit. A eos consectetur impedit assumenda dicta. Natus non laborum unde?
+                Obcaecati aut corporis eos praesentium provident enim voluptas totam tempora accusamus? Ea.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

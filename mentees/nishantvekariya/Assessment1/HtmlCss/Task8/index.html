@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML5 Page Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f3;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #0056b3;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        details {
+            margin-bottom: 20px;
+        }
+
+        details summary {
+            cursor: pointer;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        details summary:hover {
+            background-color: #0056b3;
+        }
+
+        article {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            display: none;
+        }
+
+        details[open] article {
+            display: block;
+        }
+
+        footer {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+
+        details:first-of-type article {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Semantic Webpage</h1>
+        <p>A simple demonstration of semantic HTML5 elements.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#article1">Article 1</a></li>
+            <li><a href="#article2">Article 2</a></li>
+            <li><a href="#article3">Article 3</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <details open>
+            <summary>Article 1: Understanding Semantic HTML</summary>
+            <article>
+                <p>Semantic HTML is a way of using HTML markup to reinforce the meaning of the content. It helps search
+                    engines and other user agents understand the context and structure of the web page.</p>
+            </article>
+        </details>
+
+        <details>
+            <summary>Article 2: Benefits of Semantic Elements</summary>
+            <article>
+                <p>Using semantic elements improves accessibility, allows for better SEO, and makes your code easier to
+                    read
+                    and maintain. It also helps screen readers provide a better experience for users with disabilities.
+                </p>
+            </article>
+        </details>
+
+        <details>
+            <summary>Article 3: Examples of Semantic Elements</summary>
+            <article>
+                <p>Common semantic elements include <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>,
+                    <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code>. These
+                    elements
+                    help structure the content and define its purpose.
+                </p>
+            </article>
+        </details>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nishant Vekariya. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
