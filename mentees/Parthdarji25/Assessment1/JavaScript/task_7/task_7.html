@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task_7_Object Properties, Methods, and Events</title>
+    <script src="task_7.js" defer></script>
+    <!-- Link to the car.js script -->
+  </head>
+  <body>
+    <h1>Car Engine Control</h1>
+    <!-- Button to start the car's engine -->
+    <button id="startButton">Start Engine</button>
+
+    <script>
+      // Add an event listener to the button to trigger the car's startEngine method
+      document.addEventListener("DOMContentLoaded", () => {
+        document
+          .getElementById("startButton")
+          .addEventListener("click", onButtonClick);
+      });
+    </script>
+  </body>
+</html>
