@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive YouTube Video Embed</title>
+    <style>
+        /* Container to make the iframe responsive */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        /* Styling the iframe */
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Responsive YouTube Video Embed</h1>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/XX_OcWCM_K8?si=orPjVjKhXbLZQElG" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+
+</body>
+
+</html>

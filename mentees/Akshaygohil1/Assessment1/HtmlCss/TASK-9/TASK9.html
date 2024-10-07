@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors and Styling</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="task9.css">
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+            padding: 20px;
+        }
+
+        p {
+            color: #333;
+            font-size: 18px;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Inline CSS -->
+    <header style="background-color: #333; color: white; padding: 20px; text-align: center;">
+        <h1>This Is Task On CSS Styling</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main style="padding: 20px;">
+        <section>
+            <h2>Internal CSS</h2>
+            <p>This paragraph is styled using internal CSS located inside the <code>&lt;style&gt;</code> tag in the
+                <code>&lt;head&gt;</code> section.
+            </p>
+        </section>
+
+        <section>
+            <h2>Inline CSS</h2>
+            <p style="color: red; font-weight: bold;">This paragraph is styled using inline CSS via the
+                <code>style</code> attribute directly on the element.
+            </p>
+        </section>
+
+        <section>
+            <h2>External CSS</h2>
+            <p>This paragraph is styled using an external stylesheet linked through the <code>&lt;link&gt;</code> tag.
+            </p>
+        </section>
+    </main>
+
+</body>
+
+</html>

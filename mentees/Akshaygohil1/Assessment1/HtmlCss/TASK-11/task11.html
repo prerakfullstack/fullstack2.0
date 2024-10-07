@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margins, Padding, Height, and Width</title>
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFE1FF;
+        }
+
+        /* Styling the div with margin and padding */
+        .container{
+            padding: 15px;
+            height: 100vh;
+        }
+        .box {
+            background-color: #433878;
+            color: white;
+            margin: 20px;
+            /* Margin around the div */
+            padding: 15px;
+            /* Padding inside the div */
+            text-align: center;
+        }
+
+        /* Styling the section with fix height and width */
+        .sized-section {
+            background-color: #333;
+            color: white;
+            height: 400px;
+            /*  height */
+            width: 600px;
+            /*  width */
+            margin: 20px auto;
+            /* css for centering section  */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Div with margin and padding -->
+    <div class="container">
+        <div class="box">
+            <h2>Div with Margin and Padding</h2>
+            <p>This div has a margin of 20px and padding of 15px inside it.</p>
+        </div>
+
+        <!-- Section with defined height and width -->
+        <section class="sized-section">
+            <h2>Section with Height and Width</h2>
+        </section>
+    </div>
+
+
+</body>
+
+</html>
