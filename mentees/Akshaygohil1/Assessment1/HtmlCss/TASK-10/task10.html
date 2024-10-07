@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors, Borders, and Backgrounds</title>
+
+    <!-- Internal CSS -->
+    <style>
+        /*  Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #A66E38;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #FFAD60;
+            /* Applying background color */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Div Styling with Border */
+        .content-box {
+            border: 2px solid black;
+            /* Border styling */
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            background-color: #FFEEAD;
+        }
+
+        /* Section with Background Image */
+        .background-section {
+            background-image: url('./img2.jfif');
+            /* Background image */
+            background-position: center;
+            /* Center the image */
+            height: 400px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .background-section h2 {
+            font-size: 36px;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Semi-transparent background for readability */
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Colors, Borders, and Backgrounds Example</h1>
+    </header>
+
+    <!-- Content Box with Border -->
+    <div class="content-box">
+        <h2>This is a content box with a border</h2>
+        <p>The box is styled with a 2px solid black border, padding, and margin for proper spacing.</p>
+    </div>
+
+    <!-- Section with Background Image -->
+    <section class="background-section">
+        <h2>Background Image Section</h2>
+    </section>
+
+</body>
+
+</html>

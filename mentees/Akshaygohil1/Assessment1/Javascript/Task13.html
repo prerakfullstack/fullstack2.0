@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 13</title>
+    <script src="./Task13.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .input-div {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 1rem;
+        }
+
+        input[type="text"] {
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        #addTodo {
+            padding: 0.5rem 1rem;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #addTodo:hover {
+            background-color: #0056b3;
+        }
+
+        .todoDiv {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fff;
+            padding: 0.5rem 1rem;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+
+        .todoDiv p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .delete {
+            padding: 0.4rem 0.8rem;
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .delete:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="input-div">
+            <label for="add">Add Todo</label>
+            <input type="text" name="add" id="add">
+        </div>
+        <br>
+        <button id="addTodo">Add Todo</button>
+    </div>
+    <div class="renderedTodo"></div>
+
+</body>
+
+</html>

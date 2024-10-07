@@ -1,0 +1,39 @@
+body {
+    margin: 20px;
+    line-height: 1.6;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Styling section and content */
+.section-container {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    color: #4a90e2;
+}
+
+.highlight {
+    color: #e67e22;
+    /* Orange color for span */
+    font-weight: bold;
+}
