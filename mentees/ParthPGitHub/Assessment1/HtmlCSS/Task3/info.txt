@@ -1,0 +1,20 @@
+Breakdown of the Code:
+Headings:
+
+<h1>: The main heading with a custom size and light blue color.
+<h2>: Secondary headings with a slightly smaller size and orange color.
+<h3>: Tertiary heading with an even smaller size and purple color.
+
+Paragraphs:
+
+Three paragraphs, each styled with different font families, sizes, and colors using CSS classes (.paragraph1, .paragraph2, .paragraph3).
+
+Text Formatting:
+
+The <strong> tag is used to make text bold.
+The <em> tag is used to italicize text.
+
+CSS Styles:
+
+Different font families and colors are applied to each paragraph to differentiate them visually.
+Headings have unique sizes and colors to stand out.

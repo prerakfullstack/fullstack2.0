@@ -1,0 +1,15 @@
+Explanation of the Code:
+
+Internal CSS:
+
+Defined within the <style> tag in the <head> section.
+Styles for the body, <h1>, and <p> tags are included.
+
+External CSS:
+
+Linked to an external stylesheet (styles.css).
+This file contains additional styles specifically for paragraphs.
+
+Inline Styles:
+
+Applied directly to the second <p> element using the style attribute, which sets the text color to blue and increases the font size.

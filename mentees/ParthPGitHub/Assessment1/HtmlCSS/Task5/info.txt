@@ -1,0 +1,16 @@
+Breakdown of the Code:
+Table Structure:
+
+The table uses <thead> for the header row, <tbody> for the body of the table, and <tfoot> for the footer.
+Each section contains rows (<tr>) and cells (<th> for headers and <td> for data).
+
+Colspan and Rowspan:
+
+In the third row of the body, Michael Johnson's age spans two columns using colspan="2", indicating that only one column is used for the student's name.
+In the footer, Total Students: 4 spans all three columns with colspan="3".
+
+CSS Styling:
+
+border-collapse: collapse; ensures that adjacent cell borders are merged for a cleaner look.
+border, padding, and text-align styles are applied to both headers (<th>) and data cells (<td>).
+Different background colors are set for the header and footer to enhance visibility.

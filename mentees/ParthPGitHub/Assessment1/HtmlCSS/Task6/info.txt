@@ -1,0 +1,21 @@
+Explanation of the Example:
+
+Overall Structure:
+
+The webpage is wrapped in a <div> with a class of container for styling and layout.
+
+Navigation:
+
+A horizontal navigation menu created with an unordered list (<ul>) and styled using CSS flexbox.
+
+Sections:
+
+Each section (#menu, #about, #contact) contains relevant content:
+Menu Section: Displays coffee items in a flex layout for a neat presentation.
+About Section: Includes a brief description of the coffee shop, using an inline <span> for highlighting.
+Contact Section: Lists contact details, also using <span> for emphasis.
+
+Styling:
+
+Block elements (<h2>, <p>, <div>) stack vertically, while inline elements (<span>) allow for specific text formatting within paragraphs.
+The menu items have a light background, borders, and rounded corners for a polished look.

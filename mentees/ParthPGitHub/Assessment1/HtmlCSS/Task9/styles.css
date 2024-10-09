@@ -1,0 +1,5 @@
+p {
+    background-color: #e7f3fe; /* Light blue background for paragraphs */
+    padding: 10px; /* Padding around the text */
+    border-left: 5px solid #2196F3; /* Blue left border */
+}
