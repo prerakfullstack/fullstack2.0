@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Haven - The Coffee Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #6F4C3E; /* Coffee brown */
+        }
+
+        .nav {
+            list-style-type: none; /* Removes bullet points */
+            padding: 0;
+            display: flex; /* Displays items in a row */
+            justify-content: space-around; /* Distributes items evenly */
+            background: #6F4C3E; /* Coffee brown */
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .nav li {
+            margin: 0; /* Removes default margin */
+        }
+
+        .nav a {
+            color: white; /* White text for nav items */
+            text-decoration: none; /* Removes underline from links */
+            padding: 15px 20px; /* Adds padding for clickable area */
+            display: block; /* Makes the link area clickable */
+        }
+
+        .nav a:hover {
+            background: #4E3B31; /* Darker brown on hover */
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+
+        .highlight {
+            color: #FF5733; /* Highlight color for inline text */
+            font-weight: bold; /* Makes text bold */
+        }
+
+        .menu {
+            display: flex; /* Flex layout for menu items */
+            justify-content: space-between; /* Distribute space evenly */
+            flex-wrap: wrap; /* Wrap items to the next line if necessary */
+            margin-top: 20px;
+        }
+
+        .menu-item {
+            background: #f0e6d2; /* Light background for menu items */
+            border: 1px solid #d1c6b8; /* Light border */
+            border-radius: 5px; /* Rounded corners */
+            padding: 10px;
+            width: 30%; /* Fixed width for each item */
+            margin-bottom: 20px; /* Spacing between items */
+        }
+
+        .contact {
+            margin-top: 20px;
+            background: #e2e2e2; /* Light grey background */
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Welcome to Coffee Haven</h2>
+        
+        <ul class="nav">
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="content">
+            <section id="menu">
+                <h2>Our Menu</h2>
+                <div class="menu">
+                    <div class="menu-item">
+                        <h3>Espresso</h3>
+                        <p><span class="highlight">₹265.00</span> - A rich and bold coffee.</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Latte</h3>
+                        <p><span class="highlight">₹259.00</span> - Smooth and creamy with steamed milk.</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Cappuccino</h3>
+                        <p><span class="highlight">₹299.00</span> - Espresso topped with foamed milk.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about">
+                <h2>About Us</h2>
+                <p>At <span class="highlight">Coffee Haven</span>, we believe in serving the best coffee with the finest ingredients. Our mission is to provide a cozy atmosphere where coffee lovers can gather and enjoy.</p>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <div class="contact">
+                    <p>Email: <span class="highlight">info@coffeehaven.com</span></p>
+                    <p>Phone: <span class="highlight">(022) 456-7890</span></p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>
