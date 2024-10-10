@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+}
+
+.subtitle{
+    font-size: 18px;
+    margin: 15px 0px;
+}
+
+button{
+    font-size: 24px;
+    background-color: orange;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.5s all ease-in;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}

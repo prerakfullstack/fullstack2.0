@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        form {
+            background: white;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        form div {
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .gender-options,
+        .hobbies-options {
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+
+        .gender-options label,
+        .hobbies-options label {
+            display: flex;
+            align-items: center;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="action.php" method="post" target="_top">
+        <h2>Registration Form</h2>
+
+        <div>
+            <label for="name">Name</label>
+            <input type="text" minlength="2" maxlength="16" id="name" placeholder="Enter Your Name" required />
+        </div>
+
+        <div>
+            <label for="mail">Email</label>
+            <input type="email" id="mail" placeholder="Enter Your Email" required />
+        </div>
+
+        <div>
+            <label for="DOB">DOB</label>
+            <input type="date" id="DOB" required />
+        </div>
+
+        <div>
+            <label for="password">Password</label>
+            <input type="password" minlength="4" maxlength="10" id="password" placeholder="Enter Your Password" required />
+        </div>
+
+        <div>
+            <label for="gender">Gender</label>
+            <div class="gender-options">
+                <label for="gender">
+                    <input type="radio" name="gender" id="gender" value="male" required /> Male
+                </label>
+
+                <label for="fgender">
+                    <input type="radio" name="gender" id="fgender" value="female" required /> Female
+                </label>
+            </div>
+        </div>
+
+        <div>
+            <label for="hobbies">Hobbies</label>
+            <div class="hobbies-options">
+                <label for="hobbies">
+                    <input type="checkbox" id="hobbies" value="Swimming" /> Swimming
+                </label>
+
+                <label for="cricket">
+                    <input type="checkbox" id="cricket" value="Cricket" /> Cricket
+                </label>
+
+                <label for="reading">
+                    <input type="checkbox" id="reading" value="Reading" /> Reading
+                </label>
+            </div>
+        </div>
+
+        <button type="submit">Submit Form</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* Header Start */
+
+header {
+    background-color: black;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+header nav .logo {
+    max-width: 100px;
+    height: 100px;
+}
+
+header nav .logo img {
+    width: 100%;
+    height: inherit;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* Header End */
+
+/* Main Start */
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    height: 100vh;
+}
+
+main .herosection .title {
+    font-size: 36px;
+    margin: 10px 0px;
+}
+
+main .herosection .subtitle {
+    font-size: 22px;
+    margin: 10px 0px;
+}
+
+main .herosection .imagecontainer {
+    max-width: 500px;
+    margin: 0px auto;
+}
+
+main .herosection .imagecontainer img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+main article {
+    margin-top: 20px;
+}
+
+main article h2 {
+    margin: 10px 0px;
+}
+
+/* Main End */
+
+/* Footer Start */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Footer End */

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 13</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, auto);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .grid-item {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            text-align: left;
+            border-radius: 10px;
+        }
+
+        .grid-item h2 {
+            margin: 0 0 10px;
+        }
+
+        .grid-item p {
+            margin: 0 0 10px;
+        }
+
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        .grid-item ul {
+            padding-left: 20px;
+        }
+
+
+        @media  only screen and (max-width:768px) {
+            .grid{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="grid">
+            <div class="grid-item">
+                <h2>Title 1</h2>
+                <p>This is content for the first item in the first row.</p>
+            </div>
+            <div class="grid-item">
+                <h2>Title 2</h2>
+                <p>This is content for the second item in the first row.</p>
+            </div>
+            <div class="grid-item">
+                <img src="../TASK13/assets/child.jpg" alt="Image 1">
+                <p>Image and text content for the second row, first column.</p>
+            </div>
+            <div class="grid-item">
+                <img src="../TASK8/assets/heroimage.jpeg" alt="Image 2">
+                <p>Image and text content for the second row, second column.</p>
+            </div>
+            <div class="grid-item">
+                <ul>
+                    <li>List Item 1</li>
+                    <li>List Item 2</li>
+                    <li>List Item 3</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <ul>
+                    <li>List Item 4</li>
+                    <li>List Item 5</li>
+                    <li>List Item 6</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
