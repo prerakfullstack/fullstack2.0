@@ -1,0 +1,12 @@
+h2 {
+    font-size: 24px;
+    font-family: 'Georgia', serif;
+    margin-bottom: 10px;
+}
+
+section {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+}
