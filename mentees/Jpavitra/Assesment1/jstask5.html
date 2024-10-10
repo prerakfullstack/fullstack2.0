@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prerak: jstask 5</title>
+</head>
+
+<body>
+
+    <h1>JS task 5 : check console</h1>
+
+    <script>
+        function logPersonDetails({ firstName, lastName, age }) {
+            console.log(`Name: ${firstName} ${lastName}, Age: ${age}`);
+        }
+
+        const person = {
+            firstName: "Swapnil",
+            lastName: "Jain",
+            age: 30
+        };
+
+        logPersonDetails(person); 
+
+        function sumOfNumbers([num1, num2, num3]) {
+            return num1 + num2 + num3;
+        }
+
+        const numbers = [5, 25, 50];
+        const total = sumOfNumbers(numbers);
+        console.log("Sum of Numbers:", total);
+
+    </script>
+</body>
+
+</html>

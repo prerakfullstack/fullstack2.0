@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prerak: jstask 4</title>
+</head>
+
+<body>
+
+    <h1>JS task 4 : check console</h1>
+
+    <script>
+        function checkEvenOdd(number) {
+            if (number % 2 === 0) { 
+                console.log("Even");
+            } else { 
+                console.log("Odd");
+            }
+        }
+
+        checkEvenOdd(10); 
+        checkEvenOdd(7);  
+
+        function findDayOfWeek(dayNumber) {
+            let dayName;
+
+            switch (dayNumber) {
+                case 1:
+                    dayName = "Monday";
+                    break;
+                case 2:
+                    dayName = "Tuesday";
+                    break;
+                case 3:
+                    dayName = "Wednesday";
+                    break;
+                case 4:
+                    dayName = "Thursday";
+                    break;
+                case 5:
+                    dayName = "Friday";
+                    break;
+                case 6:
+                    dayName = "Saturday";
+                    break;
+                case 7:
+                    dayName = "Sunday";
+                    break;
+                default:
+                    dayName = "Invalid day number";
+                    break;
+            }
+
+            console.log(dayName);
+        }
+
+        findDayOfWeek(3); 
+        findDayOfWeek(5); 
+        findDayOfWeek(8); 
+
+
+    </script>
+</body>
+
+</html>

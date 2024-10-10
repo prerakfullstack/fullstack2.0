@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prerak: jstask 8</title>
+</head>
+
+<body>
+
+    <h1>JS task 8 : check console</h1>
+
+    <script>
+        const numbers = [12, 85, 42, 56, 99, 23, 67, 10];
+
+        const sortedNumbers = numbers.sort((a, b) => b - a);
+        console.log("Sorted in Descending Order:", sortedNumbers); 
+
+        const filteredNumbers = sortedNumbers.filter(number => number <= 50);
+        console.log("Numbers less than or equal to 50:", filteredNumbers); 
+
+        const sumOfNumbers = filteredNumbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+        console.log("Sum of Numbers:", sumOfNumbers); 
+
+        const decimalNumber = 7.67;
+
+        const roundedNumber = Math.round(decimalNumber); 
+        console.log("Rounded:", roundedNumber);
+
+        const ceiledNumber = Math.ceil(decimalNumber);
+        console.log("Ceil:", ceiledNumber);
+
+        const flooredNumber = Math.floor(decimalNumber);
+        console.log("Floor:", flooredNumber);
+
+    </script>
+</body>
+
+</html>
