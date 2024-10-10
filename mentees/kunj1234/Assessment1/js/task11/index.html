@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            localStorage.setItem("username", "John Doe");
+            let storedUsername = localStorage.getItem("username");
+            console.log(storedUsername);
+
+            let countriesAndCapitals = new Map();
+            countriesAndCapitals.set("India", "New Delhi");
+            countriesAndCapitals.set("United States", "Washington D.C.");
+            countriesAndCapitals.set("Canada", "Ottawa");
+
+            function getCapital(country) {
+                return countriesAndCapitals.get(country);
+            }
+
+            console.log(getCapital("India"));
+
+            let uniqueNumbers = new Set([1, 2, 3, 2, 4, 1]);
+            function isNumberInSet(number) {
+                return uniqueNumbers.has(number);
+            }
+
+            console.log(isNumberInSet(2));
+        </script>
+    </body>
+</html>

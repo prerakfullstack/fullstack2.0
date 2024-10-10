@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // Task 1: Deconstruct object properties
+            function logPersonDetails(person) {
+                const { firstName, lastName, age } = person;
+                console.log(`Name: ${firstName} ${lastName}, Age: ${age}`);
+            }
+
+            const personObject = {
+                firstName: "John",
+                lastName: "Doe",
+                age: 30,
+            };
+
+            logPersonDetails(personObject);
+
+            // Task 2: Sum numbers using array deconstruction
+            function sumNumbers(numbers) {
+                const [num1, num2, num3] = numbers;
+                return num1 + num2 + num3;
+            }
+
+            const numberArray = [10, 20, 30];
+            const sum = sumNumbers(numberArray);
+            console.log("Sum:", sum);
+        </script>
+    </body>
+</html>

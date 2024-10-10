@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let todoList = [];
+
+            function addTodo(item) {
+                todoList.push(item);
+                updateTodoList();
+            }
+
+            function editTodo(index, newText) {
+                todoList[index] = newText;
+                updateTodoList();
+            }
+
+            function deleteTodo(index) {
+                todoList.splice(index, 1);
+                updateTodoList();
+            }
+
+            function updateTodoList() {
+                let todoListElement = document.getElementById("todoList");
+                todoListElement.innerHTML = "";
+
+                todoList.forEach((item, index) => {
+                    let li = document.createElement("li");
+                    li.textContent = item;
+
+                    let editButton = document.createElement("button");
+                    editButton.textContent = "Edit";
+                    editButton.addEventListener("click", () => {
+                        let newText = prompt("Enter new text:");
+                        editTodo(index, newText);
+                    });
+                });
+            }
+        </script>
+    </body>
+</html>
