@@ -15,33 +15,39 @@ const demo = (() => {
     };
 
     // Function to attempt reassigning variables
-    const reassignmentDemo = () => {
-        // Reassigning let variable
-        name = 'JS';
-        console.log(`Reassigned Name: ${name}`);
-
-        // Attempting to reassign const variable
+    const reassignVariables = () => {
+        // Attempting to reassign
         try {
-            birthYear = 1995; // This will throw an error
-        } catch (error) {
-            console.error(`Error reassigning birthYear: ${error.message}`);
-        }
+            // Uncommenting this will throw an error
+            // birthYear = 1992; // Cannot reassign const variable
 
-        // Reassigning var variable
-        isStudent = false;
-        console.log(`Reassigned Is Student: ${isStudent}`);
-        
-        // Modifying the array (const can be modified if it's an object)
-        languages.push('Node JS');
-        console.log(`Updated Languages: ${languages.join(', ')}`);
+            // Reassigning let variable (this works)
+            name = "New Name"; 
+            console.log(`Updated name: ${name}`);
+
+            // Reassigning var variable
+            isStudent = false; // This works as var can be reassigned
+            console.log(`Updated isStudent: ${isStudent}`);
+
+            // Reassigning programmingLanguages array
+            languages[0] = "Node JS"; // This works as we can mutate the array
+            console.log(`Updated languages: ${languages.join(', ')}`);
+        } catch (error) {
+            console.error(`Error occurred: ${error.message}`);
+        }
     };
 
+    // Display initial variable values
+    displayVariables();
+
     return {
-        displayVariables,
-        reassignmentDemo
+        name,
+        birthYear,
+        isStudent,
+        languages,
+        reassignVariables,
     };
 })();
 
-// Execute the module functions
-demo.displayVariables();
-demo.reassignmentDemo();
+// Call the function to demonstrate reassignment
+demo.reassignVariables();
