@@ -1,0 +1,26 @@
+Task 1
+
+1) Doctype is used to inform browsers about the version of HTML used in a document   Document Type Declaration (DOCTYPE)
+
+Task 2
+
+1) The action attribute defines the action to be performed when the form is submitted 
+2) If we use get method then it will shown on url so the data was not secured
+3) post method is used to send data to the server to create/update a resource . Post request cannot be bookmarked
+4) Required attribute is used for that the field must be filled with the data otherwise the form cannot be submitted
+5) HTTP full form hypertext transfer protocol
+6) HTTP works as a request and response protocol between client and server
+
+Task 3
+
+1) Css Selector is element selector and id and class
+
+Task 4
+
+1) Meta tags are HTML tags that provide additional information about a web page to search engines . They are usually added to the <head> section of an HTML page.
+2) The title tags define the title of the document
+
+Task 6
+
+1)Block-level elements start on a new line and take full width, like <div>, <p>, and <h1>.
+2)Inline elements flow within text without breaking the line, like <span>, <a>, and <img>.
