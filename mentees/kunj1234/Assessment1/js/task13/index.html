@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Todo List</title>
+        <style>
+            .todo-container {
+                margin: 20px;
+            }
+
+            #todo-input {
+                padding: 10px;
+                border: 1px solid #ccc;
+            }
+
+            #add-todo-btn {
+                padding: 10px 20px;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+
+            #todo-list {
+                list-style: none;
+                padding: 0;
+            }
+
+            .todo-item {
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+            }
+
+            .todo-text {
+                flex: 1;
+            }
+
+            .edit-btn,
+            .delete-btn {
+                background-color: #f2f2f2;
+                border: none;
+                padding: 5px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Todo List</h1>
+        <div class="todo-container">
+            <input type="text" id="todo-input" placeholder="Add a todo" />
+            <button id="add-todo-btn">Add</button>
+            <ul id="todo-list"></ul>
+        </div>
+        <script>
+            const todoInput = document.getElementById("todo-input");
+            const addTodoBtn = document.getElementById("add-todo-btn");
+            const todoList = document.getElementById("todo-list");
+
+            // Load todos from localStorage on page load
+            let todos = JSON.parse(localStorage.getItem("todos")) || [];
+
+            // Function to add a new todo
+            function addTodo() {
+                const todoText = todoInput.value.trim();
+                if (todoText !== "") {
+                    const todo = {
+                        text: todoText,
+                        completed: false,
+                    };
+                    todos.push(todo);
+                    renderTodos();
+                    todoInput.value = "";
+                    saveTodos();
+                }
+            }
+
+            // Function to render the todo list
+            function renderTodos() {
+                todoList.innerHTML = "";
+                todos.forEach((todo, index) => {
+                    const todoItem = document.createElement("li");
+                    todoItem.className = "todo-item";
+
+                    const todoTextElement = document.createElement("span");
+                    todoTextElement.className = "todo-text";
+                    todoTextElement.textContent = todo.text;
+
+                    const editBtn = document.createElement("button");
+                    editBtn.className = "edit-btn";
+                    editBtn.textContent = "Edit";
+                    editBtn.addEventListener("click", () => editTodo(index));
+
+                    const deleteBtn = document.createElement("button");
+                    deleteBtn.className = "delete-btn";
+                    deleteBtn.textContent = "Delete";
+                    deleteBtn.addEventListener("click", () => deleteTodo(index));
+
+                    todoItem.appendChild(todoTextElement);
+                    todoItem.appendChild(editBtn);
+                    todoItem.appendChild(deleteBtn);
+
+                    todoList.appendChild(todoItem);
+                });
+            }
+
+            // Function to edit a todo
+            function editTodo(index) {
+                const newText = prompt("Enter the new todo text:", todos[index].text);
+                if (newText !== null && newText !== "") {
+                    todos[index].text = newText;
+                    renderTodos();
+                    saveTodos();
+                }
+            }
+
+            // Function to delete a todo
+            function deleteTodo(index) {
+                todos.splice(index, 1);
+                renderTodos();
+                saveTodos();
+            }
+
+            // Function to save todos to localStorage
+            function saveTodos() {
+                localStorage.setItem("todos", JSON.stringify(todos));
+            }
+
+            // Render the initial todo list
+            renderTodos();
+
+            // Add event listener to the add todo button
+            addTodoBtn.addEventListener("click", addTodo);
+        </script>
+    </body>
+</html>

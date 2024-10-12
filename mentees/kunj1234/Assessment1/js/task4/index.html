@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function isEvenOrOdd(number) {
+                if (number % 2 === 0) {
+                    console.log("Even");
+                } else {
+                    console.log("Odd");
+                }
+            }
+
+            isEvenOrOdd(8);
+
+            function dayOfWeek(dayNumber) {
+                switch (dayNumber) {
+                    case 1:
+                        console.log("Monday");
+                        break;
+                    case 2:
+                        console.log("Tuesday");
+                        break;
+                    case 3:
+                        console.log("Wednesday");
+                        break;
+                    case 4:
+                        console.log("Thursday");
+                        break;
+                    case 5:
+                        console.log("Friday");
+                        break;
+                    case 6:
+                        console.log("Saturday");
+                        break;
+                    case 7:
+                        console.log("Sunday");
+                        break;
+
+                    default:
+                        console.log("Invalid day number");
+                }
+            }
+
+            dayOfWeek(3);
+        </script>
+    </body>
+</html>

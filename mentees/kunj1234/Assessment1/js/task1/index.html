@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let name = "Your Name";
+            const birthYear = 1996;
+            let isStudent = true;
+            let programmingLanguages = ["JavaScript", "Python", "HTML"];
+
+            console.log("Name:", name);
+            console.log("Birth Year:", birthYear);
+            console.log("Is Student:", isStudent);
+            console.log("Programming Languages:", programmingLanguages);
+
+            // Attempt to reassign variables
+            name = "New Name"; // Works with let
+            // birthYear = 2000; // Error with const
+            isStudent = false; // Works with let
+            programmingLanguages.push("CSS"); // Modifies the array
+        </script>
+    </body>
+</html>

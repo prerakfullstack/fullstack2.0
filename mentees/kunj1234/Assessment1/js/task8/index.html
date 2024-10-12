@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let numbers = [50, 10, 30, 80, 20];
+            numbers.sort(function (a, b) {
+                return b - a;
+            });
+            console.log(numbers);
+
+            let filteredNumbers = numbers.filter(function (number) {
+                return number > 50;
+            });
+            console.log(filteredNumbers);
+
+            let sum = numbers.reduce(function (accumulator, currentValue) {
+                return accumulator + currentValue;
+            }, 0);
+            console.log(sum);
+
+            let decimalNumber = 3.14;
+            console.log(Math.round(decimalNumber)); // 3
+            console.log(Math.ceil(decimalNumber)); // 4
+            console.log(Math.floor(decimalNumber)); // 3
+        </script>
+    </body>
+</html>
