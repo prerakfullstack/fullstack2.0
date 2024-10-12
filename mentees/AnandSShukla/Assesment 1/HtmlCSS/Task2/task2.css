@@ -19,7 +19,7 @@ body {
 .child {
   width: 80%;
   max-width: 600px;
-  padding: 20px;
+  padding: 40px;
   border: 4px solid black;
 }
 
