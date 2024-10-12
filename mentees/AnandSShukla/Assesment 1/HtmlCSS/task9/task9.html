@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors and Styling</title>
+
+    <link rel="stylesheet" href="task9.css" />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        color: blue;
+        text-align: center;
+      }
+
+      p.internal {
+        font-size: 18px;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="background-color: lightgrey">Welcome to the CSS Styling Task</h1>
+
+    <p class="internal">
+      This paragraph is styled using internal CSS. It has green text and a font
+      size of 18px.
+    </p>
+
+    <p class="external">
+      This paragraph is styled using external CSS. It has purple text and a
+      background color.
+    </p>
+
+    <div style="color: white; background-color: black; padding: 10px">
+      This is a <strong>div</strong> with inline styling for background color
+      and text color.
+    </div>
+  </body>
+</html>
