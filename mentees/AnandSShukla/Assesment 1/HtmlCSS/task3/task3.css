@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(29, 230, 18);
+}
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  height: 70%;
+  padding: 2rem;
+  gap: 20px;
+  border: 5px solid black;
+  border-radius: 8px;
+  background-color: beige;
+}
+/* font, font size, and color */
+.para1 {
+  /* font-family: "Times New Roman", Times, serif; */
+  font-family: "Sofia", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: brown;
+  font-style: italic;
+  text-shadow: 3px 3px 3px #ababab;
+}
+.para2 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: black;
+  font-style: italic;
+  line-height: 1.5;
+}
+.para3 {
+  font-family: "Brush Script MT", cursive;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: red;
+  font-style: oblique;
+  text-shadow: 3px 3px 3px #ababab;
+  line-height: 1.5;
+}
+h1 {
+  font-size: 32px;
+  color: blue;
+}
+h2 {
+  font-size: 32px;
+  font-family: fantasy, cursive;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-weight: 600;
+}
