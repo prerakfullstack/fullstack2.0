@@ -48,3 +48,5 @@ console.log(`I am a student: ${isStudent}`);
 console.log(`Programming Languages known ${myLanguages}`);
 
 // const variables cannot be reassigned or redeclared
+
+//sample comment
