@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task_11</title>
+    <!-- reset css -->
+    <link rel="stylesheet" href="./external_style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      .section_div {
+        position: relative;
+        display: flex;
+        width: 500px;
+        height: 300px;
+        background-color: tan;
+      }
+      .division_heading {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .marginDiv {
+        position: relative;
+        margin: 50px;
+        padding: 50px;
+        display: flex;
+        flex-grow: 1;
+        background-color: antiquewhite;
+      }
+      .paddingDiv {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: cadetblue;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2>Task 11: Margins, Padding, Height, and Width</h2>
+      <div class="section_div">
+        <p class="division_heading">
+          This Blue color is margin part from all side of 50px.
+        </p>
+        <div class="marginDiv">
+          <p class="division_heading">
+            This Tan color is padding part from all side of 50px.
+          </p>
+          <div class="paddingDiv">
+            <p>
+              height of this red div is <span class="highlight">100px</span>
+            </p>
+            &
+            <p>width of this red div is <span class="highlight">300px</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
