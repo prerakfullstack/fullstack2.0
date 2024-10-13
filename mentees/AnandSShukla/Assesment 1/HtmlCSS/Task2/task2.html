@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2</title>
+    <link href="./task2.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="parent">
+      <div class="child">
+        <form
+          action=""
+          method="post"
+          target="_blank"
+          autocomplete="on"
+          enctype="multipart/form-data"
+          name="myform1"
+        >
+          <div>
+            <label for="name">Name : </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              maxlength="100"
+              required
+              size="60"
+              value=""
+              placeholder="Enter your name"
+              autofocus
+            />
+          </div>
+          <div>
+            <label for="email">Email : </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              maxlength="100"
+              required
+              size="60"
+              value=""
+              placeholder="Enter your email"
+            />
+          </div>
+
+          <div>
+            <label for="dob">Date of Birth : </label>
+            <input
+              type="datetime"
+              id="dob"
+              name="DateOfBirth"
+              value=""
+              min="1980-01-01"
+              max="2006-01-01"
+            />
+          </div>
+
+          <div>
+            <label for="pwd">Password : </label>
+            <input
+              type="password"
+              name="password"
+              id="pwd"
+              value=""
+              maxlength="15"
+              minlength="8"
+              required
+            />
+          </div>
+
+          <div
+            style="display: flex; width: 49%; justify-content: space-between"
+          >
+            <label>Gender</label>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label><br />
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label><br />
+          </div>
+          <div
+            style="display: flex; width: 69%; justify-content: space-between"
+          >
+            <label for="hobbies"> Hobbies </label>
+            <input
+              type="checkbox"
+              class="hobbies"
+              name="Cricket"
+              value="Cricket"
+            />
+            <label for="Cricket">Cricket</label>
+            <input type="checkbox" class="hobbies" name="Music" value="Music" />
+            <label for="Music">Music</label>
+            <input type="checkbox" class="hobbies" name="dance" value="dance" />
+            <label for="dance">Dance</label>
+          </div>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
