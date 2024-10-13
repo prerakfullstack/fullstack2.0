@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        .input-wrapper{
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<body>
+    <p>Registration Form</p>
+    <form action="/" method="post">
+        <div class="input-wrapper">
+            <label for="fullName">Fullname : </label>
+            <input type="text" name="fullName" id="fullName" required>
+        </div>
+        <div class="input-wrapper">
+            <label for="email">Email  : </label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="input-wrapper">
+            <label for="dob">Date of Birth  : </label>
+            <input type="date" name="dob" id="dob" required>
+        </div>
+        <div class="input-wrapper">
+            <label for="password">Password  : </label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <div class="input-wrapper">
+            <label>Gender :</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+        </div>
+        <div class="input-wrapper">
+            <label>Hobbies : </label>
+            <input type="checkbox" name="hobbies" id="cricket" value="cricket" >
+            <label for="cricket">Cricket</label>
+            <input type="checkbox" name="hobbies" id="carrom" value="carrom" >
+            <label for="carrom">Carrom</label>
+            <input type="checkbox" name="hobbies" id="cycling" value="cycling" >
+            <label for="cycling">Cycling</label>
+        </div>
+        <div class="input-wrapper">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

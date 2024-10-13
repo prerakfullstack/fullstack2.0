@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 12</title>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #d2e3fb;
+            color: #000;
+            gap: 4px;
+        }
+
+        nav a {
+            color: #000;
+            text-decoration: none;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .main-section {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .tab-content {
+            flex: 1 1 30%;
+            padding: 10px;
+            background-color: #f4f4f4;
+            margin: 10px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        @media (max-width: 1024px) {
+            .tab-content {
+                flex: 1 1 45%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .tab-content {
+                flex: 1 1 100%;
+            }
+            nav a{
+                margin: 0 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>Logo</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About US</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact US</a>
+        </nav>
+    </header>
+    <main class="main-section">
+        <div class="tab-content">Tab 1</div>
+        <div class="tab-content">Tab 2</div>
+        <div class="tab-content">Tab 3</div>
+    </main>
+    <footer>
+        &copy; 2024 Neel. All rights reserved.
+    </footer>
+</body>
+
+</html>
