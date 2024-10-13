@@ -1,0 +1,9 @@
+.input-wrapper {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.todo-list {
+    padding: 4rem;
+}

@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 2rem;
+}
+
+.heading span {
+    font-style: italic;
+}
+
+.nav-list {
+    display: flex;
+    margin-block: 2rem;
+    padding: 1rem;
+    gap: 2rem;
+    overflow-x: auto;
+    list-style-type: none;
+}
+
+.nav-item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    min-width: max-content;
+}
+
+.nav-link {
+    text-decoration: none;
+}
