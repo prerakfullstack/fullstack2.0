@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="This is a sample webpage demonstrating the use of meta tags, SEO optimization, and accessibility features in HTML."
+    />
+    <meta
+      name="keywords"
+      content="HTML, meta tags, SEO, accessibility, page title"
+    />
+    <meta name="author" content="Your Name" />
+
+    <link rel="stylesheet" href="./external_style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+      }
+
+      form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+      }
+
+      .inputWrapper {
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .inputWrapper label {
+        font-size: 14px;
+        color: #333;
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .inputWrapper input[type="text"],
+      .inputWrapper input[type="email"],
+      .inputWrapper input[type="date"],
+      .inputWrapper input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+
+      .inputWrapper input[type="radio"],
+      .inputWrapper input[type="checkbox"] {
+        margin-right: 10px;
+      }
+
+      .inputWrapper input[type="submit"] {
+        width: 100%;
+        background-color: #4caf50;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .inputWrapper input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      /* Responsive styling */
+      @media (max-width: 768px) {
+        form {
+          padding: 15px;
+        }
+
+        .inputWrapper input[type="text"],
+        .inputWrapper input[type="email"],
+        .inputWrapper input[type="date"],
+        .inputWrapper input[type="password"],
+        .inputWrapper input[type="submit"] {
+          font-size: 14px;
+        }
+      }
+
+      /* Style for the button */
+      .login-btn {
+        background-color: #4267b2; /* Facebook blue */
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.5
+        ); /* Black background with opacity */
+      }
+
+      /* Modal Content Box */
+      .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 500px; /* Set a max width */
+        border-radius: 10px;
+      }
+
+      /* Close Button */
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      /* Iframe styles for responsive view */
+      .modal iframe {
+        width: 100%;
+        height: 300px;
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+    <title>HTML & CSS Task-1</title>
+  </head>
+  <body>
+    <div class="content-section">
+      <nav>
+        <ul class="horizontal-menu">
+          <li><a href="#Task_1">Task_1</a></li>
+          <li><a href="#Task_2">Task_2</a></li>
+          <li><a href="#Task_3">Task_3</a></li>
+          <li><a href="#Task_4">Task_4</a></li>
+          <li><a href="#Task_5">Task_5</a></li>
+          <li><a href="#Task_6">Task_6</a></li>
+          <li><a href="#Task_7">Task_7</a></li>
+          <li><a href="#Task_8">Task_8</a></li>
+        </ul>
+      </nav>
+    </div>
+    <h1 class="PageHeading">Welcome to Test 1 Basic of HTML & CSS</h1>
+    <section id="Task_1" class="task-1">
+      <h2>Task 1: Basic HTML Elements and Attributes</h2>
+      <!-- Task 1: Basic HTML Elements and Attributes
+    Objective: Create a simple webpage using basic HTML elements and attributes.
+    1. Create a webpage (index.html) with the following:
+    ○ Add a heading (<h1>), a paragraph (<p>), and an image (<img>).
+    ○ The image should have an alt attribute describing the image.
+    ○ Add an unordered list (<ul>) and an ordered list (<ol>) with at least 3 items
+    each.
+    ○ Add a link to another website with the href attribute.
+    Topics Required:
+    ● Basic HTML elements (headings, paragraphs, lists, images)
+    ● Attributes (like alt, href) -->
+      <div class="blog-card">
+        <div>
+          <h1>Blog Heading</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Consequuntur delectus beatae voluptatem. Ea, exercitationem deleniti
+            nulla libero vel quo, provident, reiciendis vero aperiam molestias
+            doloremque.
+          </p>
+        </div>
+        <div class="imageContainer">
+          <a href="#">
+            <img
+              src="./random_image.png"
+              alt="BlogImage"
+              style="width: 100%; height: 100%"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-card">
+          <ul>
+            <li>unordered_List 1</li>
+            <li>unordered_List 2</li>
+            <li>unordered_List 3</li>
+            <li>unordered_List 4</li>
+          </ul>
+        </div>
+        <div class="blog-card">
+          <ol>
+            <li>ordered_List 1</li>
+            <li>ordered_List 2</li>
+            <li>ordered_List 3</li>
+            <li>ordered_List 4</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <section id="Task_2">
+      <h2>Task 2: HTML Forms and Input Types</h2>
+      <!-- Task 2: HTML Forms and Input Types
+          Objective: Create a registration form using different form elements and input types.
+          1. Design a registration form with the following fields:
+          ● Name (text input)
+          ● Email (email input)
+          ● Date of Birth (date input)
+          ● Password (password input)
+          ● Gender (radio buttons)
+          ● Hobbies (checkboxes)
+          ● Add a Submit button
+          2. Ensure appropriate use of form attributes such as action, method, and required.
+          Topics Required:
+          ● HTML forms and attributes
+          ● Input types (text, email, date, password, radio, checkbox)
+          ● Form attributes (action, method, required) -->
+
+      <div>
+        <form
+          action="#"
+          method="post"
+          onSubmit="event.preventDefault(); console.log('values  ===>>>>>>',);"
+        >
+          <div class="inputWrapper">
+            <input type="text" required placeholder="Full Name" />
+          </div>
+          <div class="inputWrapper">
+            <input type="email" required placeholder="Enter Email" />
+          </div>
+          <div class="inputWrapper">
+            <input type="date" required placeholder="Enter Date of birth" />
+          </div>
+          <div class="inputWrapper">
+            <input
+              type="password"
+              required
+              placeholder="Enter Strong Password"
+            />
+          </div>
+          <div class="inputWrapper">
+            <input
+              type="radio"
+              required
+              id="Gender_Male"
+              name="Gender"
+              value="Male"
+            />
+            <label for="Gender_Male">Male</label>
+          </div>
+          <div class="inputWrapper">
+            <input
+              type="radio"
+              required
+              id="Gender_Female"
+              name="Gender"
+              value="Female"
+            />
+            <label for="Gender_Female">Female</label>
+          </div>
+          <div class="inputWrapper">
+            <input
+              type="checkbox"
+              id="Hobbies_1"
+              name="Hobbies"
+              value="Hobbies_1"
+            />
+            <label for="Hobbies_1">Hobbies_1</label>
+          </div>
+          <div class="inputWrapper">
+            <input
+              type="checkbox"
+              id="Hobbies_2"
+              name="Hobbies"
+              value="Hobbies_2"
+            />
+            <label for="Hobbies_2">Hobbies_2</label>
+          </div>
+          <div class="inputWrapper">
+            <input
+              type="checkbox"
+              id="Hobbies_3"
+              name="Hobbies"
+              value="Hobbies_3"
+            />
+            <label for="Hobbies_3">Hobbies_3</label>
+          </div>
+          <div class="inputWrapper">
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <section id="Task_3">
+      <h2>Task 3: Paragraph Styling, Headings, and Text Formatting</h2>
+      <div>
+        <!-- Headings -->
+        <h1>Welcome to My Webpage</h1>
+        <h2>Explore Styling with CSS</h2>
+        <h3>Simple Text Formatting</h3>
+        <!-- Paragraphs with formatting and styles -->
+        <p class="para1">
+          This is the <strong>first</strong> paragraph. It is styled with a
+          specific <em>font</em>, <strong>font size</strong>, and
+          <span class="custom-color">color</span>.
+        </p>
+        <p class="para2">
+          This is the <em>second</em> paragraph. It demonstrates how we can use
+          <strong>bold</strong> and <em>italic</em> text for better readability.
+        </p>
+        <p class="para3">
+          This is the <strong>third</strong> paragraph. Using CSS, each
+          paragraph can be styled with <em>different fonts</em> and
+          <span class="highlight">unique colors</span>!
+        </p>
+      </div>
+    </section>
+    <section id="Task_4">
+      <h2>Task 4: Page Title and Meta Tags</h2>
+      <div>
+        <!-- <h3>Understanding Meta Tags and SEO Optimization</h3> -->
+        <h4>
+          Below is an example of how we can add Meta Tags in HTML for SEO
+          optimization
+        </h4>
+
+        <pre>
+<code>
+&lt;head&gt;
+  &lt;!-- Meta tags for SEO and accessibility --&gt;
+  &lt;meta charset="UTF-8" /&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+  &lt;!-- SEO Meta Tags --&gt;
+  &lt;meta name="description" content="This is a sample webpage demonstrating the use of meta tags, SEO optimization, and accessibility features in HTML." /&gt;
+  &lt;meta name="keywords" content="HTML, meta tags, SEO, accessibility, page title" /&gt;
+  &lt;meta name="author" content="Hardik Mistry" /&gt;
+&lt;/head&gt;
+</code>
+        </pre>
+      </div>
+    </section>
+    <section id="Task_5">
+      <h2>Task 5: HTML Tables</h2>
+      <div>
+        <h1>Student Information</h1>
+        <!-- Table structure for displaying student data -->
+        <table>
+          <!-- Table header -->
+          <thead>
+            <tr>
+              <th>Student Name</th>
+              <th>Age</th>
+              <th>Grade</th>
+            </tr>
+          </thead>
+
+          <!-- Table body -->
+          <tbody>
+            <tr>
+              <td>John Doe</td>
+              <td>16</td>
+              <td>A</td>
+            </tr>
+            <tr>
+              <td>Hardik Mistry</td>
+              <!-- Rowspan used for Jane Smith's name spanning two rows -->
+              <td>15</td>
+              <td>B</td>
+            </tr>
+            <tr>
+              <td>Jane Smith</td>
+              <td>17</td>
+              <td>A+</td>
+            </tr>
+            <tr>
+              <td>Emily Brown</td>
+              <td>18</td>
+              <td colspan="2">A</td>
+              <!-- Colspan used to combine Grade and Age for this entry -->
+            </tr>
+          </tbody>
+
+          <!-- Table footer -->
+          <tfoot>
+            <tr>
+              <td colspan="3">End of Student List</td>
+              <!-- Footer row spanning all columns -->
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+    <section id="Task_6">
+      <h2>Task 6: Block and Inline Elements, Divs, Lists</h2>
+      <!-- Section using div to group content -->
+      <div class="content-section">
+        <h2>Welcome to the Block and Inline Elements Demo</h2>
+        <p>
+          This is an example of a paragraph (block element) inside a
+          <span class="highlight">&lt;div&gt;&lt;/div&gt;</span>. Inline
+          elements like
+          <span class="highlight">&lt;span&gt;&lt;/span&gt;</span> can be used
+          to style specific words or parts of a sentence. and
+          <span class="highlight">&lt;a&gt; href="#"&gt;&lt;/a&gt;</span>
+        </p>
+        <nav>
+          <ul class="horizontal-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section id="Task_7">
+      <h2>Task 7: Iframes Embedded YouTube Video</h2>
+      <div>
+        <!-- Responsive iframe for embedding a YouTube video -->
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/6sfiAyKy8Jo?si=ygQw5SrfMU_4pELt"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <section id="Task_8">
+      <h2>Task 8: Page Layout with Semantic Elements</h2>
+      <div>
+        <header>
+          <nav style="width: 100%; display: flex">
+            <ul style="width: 100%; display: flex; gap: 3rem">
+              <li><a href="#">Nav Link 1</a></li>
+              <li><a href="#">Nav Link 2</a></li>
+              <li><a href="#">Nav Link 3</a></li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <article>
+            <h1>Heading</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
+              illum neque qui quibusdam, illo doloribus praesentium repellat eum
+              rem dolorum nisi aliquam iste explicabo consequuntur voluptatem
+              accusamus porro sunt ea ullam, obcaecati veniam quam ab ad esse!
+              Recusandae exercitationem, dolor hic corporis quo velit, nisi,
+              quisquam voluptas labore accusantium neque.
+            </p>
+          </article>
+        </main>
+        <footer></footer>
+      </div>
+    </section>
+  </body>
+</html>

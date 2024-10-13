@@ -1,0 +1,237 @@
+.PageHeading {
+  padding: 10px;
+}
+
+.blog-card {
+  padding: 2rem;
+  display: flex;
+  border: 2px solid rgba(211, 211, 211, 0.342);
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px lightgrey;
+  margin: 2rem;
+}
+
+.blog-card .imageContainer {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+/* tast_3 Css */
+/* Basic resets */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Headings with custom sizes and colors */
+h1 {
+  font-size: 2.5rem;
+  color: #2a9d8f;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #264653;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #e76f51;
+}
+
+/* Styling for each paragraph */
+.para1 {
+  font-family: "Georgia", serif;
+  font-size: 1.2rem;
+  color: #264653;
+  margin-bottom: 15px;
+}
+
+.para2 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.1rem;
+  color: #2a9d8f;
+  margin-bottom: 15px;
+}
+
+.para3 {
+  font-family: "Verdana", sans-serif;
+  font-size: 1.3rem;
+  color: #e9c46a;
+  margin-bottom: 15px;
+}
+
+/* Custom inline styling for specific words */
+.custom-color {
+  color: #f4a261;
+}
+
+.highlight {
+  background-color: #264653;
+  color: white;
+  padding: 0 5px;
+}
+
+/* style for task-4 */
+
+/* README.md styling for the section */
+
+#Task_4 {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  /* padding: 20px;
+  margin: 20px 0; */
+  border: 1px solid #e1e4e8;
+}
+
+#Task_4 h3 {
+  font-size: 1.5rem;
+  color: #0366d6;
+  border-bottom: 2px solid #e1e4e8;
+  padding-bottom: 10px;
+}
+
+#Task_4 h4 {
+  font-size: 1.2rem;
+  color: #24292e;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+#Task_4 pre {
+  background-color: #525252;
+  border: 1px solid #e1e4e8;
+  border-radius: 5px;
+  padding: 15px;
+  overflow-x: auto;
+  margin-top: 10px;
+}
+
+#Task_4 code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  color: #cbcbcb;
+  white-space: pre-wrap;
+}
+
+#Task_4 code::before,
+#Task_4 code::after {
+  content: "";
+}
+
+/* task_5 css */
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for table headers */
+th {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+/* Styling for table cells */
+td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+/* Row hover effect */
+tr:hover {
+  background-color: #f2f2f2;
+}
+
+/* Styling for the footer row */
+tfoot td {
+  background-color: #f1f1f1;
+  text-align: center;
+  font-weight: bold;
+  border-top: 2px solid #ddd;
+  padding: 10px;
+}
+
+/* task_6 CSS */
+
+/* Styling for the content section */
+.content-section {
+  background-color: #e9e9f0;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  /* width: 100%; */
+}
+
+h2 {
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #ff5722;
+  font-weight: bold;
+}
+
+/* Styling for horizontal navigation menu */
+nav {
+  margin-top: 20px;
+}
+
+.horizontal-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around; /* Distributes items evenly */
+}
+
+.horizontal-menu li {
+  display: inline;
+}
+
+.horizontal-menu a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #4caf50;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.horizontal-menu a:hover {
+  background-color: #45a049;
+}
+
+section {
+  min-height: 100vh;
+  max-height: 100vh;
+  /* background-color: red; */
+  width: 100%;
+  padding: 2rem;
+}
+section > div {
+  margin: 2rem;
+}
+section > h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  padding-left: 2rem;
+  width: 100%;
+}

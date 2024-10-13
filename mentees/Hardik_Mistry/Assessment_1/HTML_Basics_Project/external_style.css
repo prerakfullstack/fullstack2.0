@@ -1,0 +1,23 @@
+/* Reset for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a consistent baseline for typography */
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+/* Ensure elements like lists, headings, and links are reset */
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

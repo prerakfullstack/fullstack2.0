@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task_12</title>
+    <link rel="stylesheet" href="./external_style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Basic reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* Global styles */
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+      }
+      .logo {
+        font-size: 24px;
+      }
+      .nav-links {
+        list-style-type: none;
+        display: flex;
+        gap: 20px;
+      }
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+        margin-top: 20px;
+      }
+      /* Flexbox grid layout for main content */
+      .content-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+      }
+      .column {
+        flex: 1 1 300px;
+        padding: 20px;
+        background-color: #f4f4f4;
+        text-align: center;
+        border: 1px solid #ddd;
+      }
+      /* Responsive layout: tablet and mobile */
+      @media (max-width: 1024px) {
+        /* On tablets (768px to 1024px), make a 2-column grid with the third column below */
+        .content-container {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        .column {
+          flex: 1 1 45%; /* Two columns with 45% width each */
+        }
+        .column:nth-child(3) {
+          flex: 1 1 100%; /* The third column takes full width below */
+        }
+      }
+      @media (max-width: 768px) {
+        /* On mobile (<768px), stack all columns vertically */
+        .content-container {
+          flex-direction: column;
+        }
+        .column {
+          flex: 1 1 100%; /* Full width for each column */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Logo</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="content-container">
+        <section class="column">Tab 1</section>
+        <section class="column">Tab 2</section>
+        <section class="column">Tab 3</section>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2024 Your Company</p>
+    </footer>
+  </body>
+</html>
