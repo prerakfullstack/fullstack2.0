@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 12</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header,
+      footer {
+        background-color: rgb(43, 43, 43);
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      nav a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+      }
+      main {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+      }
+      .column {
+        background-color: lightgray;
+        border: 1px solid gray;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      footer {
+        text-align: center;
+        padding: 10px;
+      }
+
+      @media (min-width: 1024px) {
+        .column {
+          flex: 1 1 calc(33.333% - 40px);
+          margin: 10px;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .column {
+          flex: 1;
+          flex-wrap: wrap;
+          margin: 10px;
+        }
+        .column:nth-child(3) {
+          flex: 1 1 calc(100% - 20px);
+        }
+      }
+      @media (max-width: 767px) {
+        .column {
+          flex: 1 1 100%;
+          margin: 10px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Logo</div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <div class="column">Tab 1</div>
+      <div class="column">Tab 2</div>
+      <div class="column">Tab 3</div>
+    </main>
+    <footer>
+      <p>&copy; 2024. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

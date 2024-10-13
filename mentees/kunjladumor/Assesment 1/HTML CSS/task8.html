@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 8</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        display: grid;
+        grid-template-columns: auto 1fr;
+      }
+      header,
+      footer {
+        text-align: center;
+        padding: 20px;
+        grid-column: span 2;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      nav ul li {
+        margin-bottom: 10px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <header style="background-color: lightblue">
+      <h1>This is the header</h1>
+    </header>
+    <nav
+      style="background-color: lightgreen; display: inline-block; padding: 20px"
+    >
+      <h2>Navigation</h2>
+      <ul>
+        <li>
+          <a href="#">Profile</a>
+        </li>
+        <li>
+          <a href="#">Settings</a>
+        </li>
+        <li>
+          <a href="#">Logout</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main
+      style="
+        background-color: lightcoral;
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        gap: 1rem;
+      "
+    >
+      <h2>Main Content</h2>
+      <article style="background-color: rgba(0, 0, 0, 0.2); padding: 20px">
+        <h3>Article 1</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+          eius quam, nesciunt explicabo consectetur modi obcaecati. Numquam,
+          ducimus dolores. Atque.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+          eius quam, nesciunt explicabo consectetur modi obcaecati. Numquam,
+          ducimus dolores. Atque.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+          eius quam, nesciunt explicabo consectetur modi obcaecati. Numquam,
+          ducimus dolores. Atque.
+        </p>
+      </article>
+    </main>
+
+    <footer style="background-color: lightblue">
+      <h2>This is the footer</h2>
+    </footer>
+  </body>
+</html>
