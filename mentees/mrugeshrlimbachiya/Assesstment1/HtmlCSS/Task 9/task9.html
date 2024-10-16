@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors and Styling</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Internal CSS -->
+    <style>
+        /* Internal styling */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #3498db; /* Light blue */
+            font-size: 36px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555; /* Dark gray */
+        }
+
+        /* Class selector */
+        .highlight {
+            background-color: #f9c74f; /* Yellow background */
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Inline CSS applied here -->
+    <h1 style="color: #2ecc71;">Welcome to Ancient Civilizations</h1>
+
+    <!-- Paragraph with internal CSS -->
+    <p>This page shows different CSS application methods: inline, internal, and external.</p>
+
+    <!-- Paragraph with a class using internal CSS -->
+    <p class="highlight">This paragraph uses internal CSS with a class selector for special styling.</p>
+
+    <!-- External CSS will style this paragraph -->
+    <p class="external">This paragraph will be styled using external CSS.</p>
+
+</body>
+</html>
