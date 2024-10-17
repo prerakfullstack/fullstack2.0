@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+
+    <!-- Form with action and method -->
+    <form action="/submit-registration" method="POST">
+      <!-- Name input (required) -->
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <!-- Email input (required, email validation) -->
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <!-- Date of Birth input (required) -->
+      <label for="dob">Date of Birth:</label><br />
+      <input type="date" id="dob" name="dob" required /><br /><br />
+
+      <!-- Password input (required) -->
+      <label for="password">Password:</label><br />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+      /><br /><br />
+
+      <!-- Gender selection (radio buttons, required) -->
+      <label>Gender:</label><br />
+      <input type="radio" id="male" name="gender" value="male" required />
+      <label for="male">Male</label><br />
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label><br />
+      <input type="radio" id="other" name="gender" value="other" />
+      <label for="other">Other</label><br /><br />
+
+      <!-- Hobbies selection (checkboxes) -->
+      <label>Hobbies:</label><br />
+      <input type="checkbox" id="reading" name="hobbies" value="reading" />
+      <label for="reading">Reading</label><br />
+      <input type="checkbox" id="traveling" name="hobbies" value="traveling" />
+      <label for="traveling">Traveling</label><br />
+      <input type="checkbox" id="sports" name="hobbies" value="sports" />
+      <label for="sports">Sports</label><br /><br />
+
+      <!-- Submit button -->
+      <input type="submit" value="Register" />
+    </form>
+  </body>
+</html>

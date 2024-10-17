@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colors, Borders, and Backgrounds</title>
+
+    <style>
+      /* Styling the header with a background color */
+      header {
+        background-color: #2c3e50;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      /* Div styling with a 2px solid black border */
+      .content {
+        border: 2px solid black;
+        padding: 20px;
+        margin: 20px;
+        text-align: center;
+      }
+
+      /* Section with a background image */
+      .background-section {
+        position: relative;
+        background-image: url("img1.png"); /* Ensure correct image path */
+        background-size: cover;
+        background-position: center;
+        padding: 100px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        overflow: hidden;
+      }
+
+      /* Gradient overlay */
+      .background-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.2);
+        background: linear-gradient(
+          rgba(255, 255, 255, 0.2),
+          rgba(46, 35, 37, 0.7)
+        );
+        z-index: 1;
+      }
+
+      /* Text inside the section with text shadow for better readability */
+      .background-section h2,
+      .background-section p {
+        position: relative;
+        z-index: 2;
+        color: #ffffff;
+        text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+        font-size: 2rem;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .background-section {
+          padding: 50px;
+        }
+
+        .background-section h2 {
+          font-size: 1.5rem;
+        }
+
+        .background-section p {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Header with background color -->
+    <header>
+      <h1>Welcome to the World of Colors, Borders, and Backgrounds</h1>
+    </header>
+
+    <!-- Div with border -->
+    <div class="content">
+      <p>This content box has a solid black border, with padding inside.</p>
+    </div>
+
+    <!-- Section with background image -->
+    <section class="background-section">
+      <h2>Background Image Section</h2>
+      <p>
+        This section has a background image that is centered and resized to
+        cover the entire area.
+      </p>
+    </section>
+    
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Margins, Padding, Height, and Width</title>
+
+    <style>
+      .box {
+        margin: 20px;
+        padding: 15px;
+        background-color: #f0f0f0;
+        border: 2px solid #ccc;
+        text-align: center;
+      }
+
+      .fixed-size-section {
+        height: 400px;
+        width: 600px;
+        background-color: #dff9fb;
+        border: 2px solid #7f8fa6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #2c3e50;
+        font-size: 1.5rem;
+      }
+
+      /* Responsive height and width */
+      @media (max-width: 768px) {
+        .fixed-size-section {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Div with margin and padding -->
+    <div class="box">
+      <p>This div has a margin of 20px and padding of 15px.</p>
+    </div>
+
+    <!-- Section with defined height and width -->
+    <section class="fixed-size-section">
+      <p>This section is 400px tall and 600px wide.</p>
+    </section>
+  </body>
+</html>

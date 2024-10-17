@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS Grid Layout">
+    <title>Tech Info</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Technology Info Page</h1>
+        <p>Explore different technologies, resources, and information using this grid layout.</p>
+    </header>
+
+    <main>
+        <!-- Grid container -->
+        <div class="grid-container">
+            <div class="grid-item">
+                <h2>Popular Technologies</h2>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h2>Featured Image</h2>
+                <img src="img1.png" alt="Technology Image" width="150">
+            </div>
+            <div class="grid-item">
+                <h2>Contact Us</h2>
+                <form action="/submit" method="POST">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Your name"><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Your email"><br><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" placeholder="Your message"></textarea><br><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="grid-item">
+                <h2>About Our Website</h2>
+                <p>
+                    This website is dedicated to providing you with the latest information about popular technologies, 
+                    resources for learning, and useful tools for developers. Stay updated with current trends in software development, 
+                    frameworks, and more.
+                </p>
+            </div>
+            <div class="grid-item">
+                <h2>Useful Resources</h2>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/">MDN Web Docs</a></li>
+                    <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+                    <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+                    <li><a href="https://reactjs.org/">React Official</a></li>
+                    <li><a href="https://nodejs.org/">Node.js Official</a></li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h2>Technology Comparison</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Technology</th>
+                            <th>Type</th>
+                            <th>Popularity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>Programming Language</td>
+                            <td>High</td>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td>Programming Language</td>
+                            <td>High</td>
+                        </tr>
+                        <tr>
+                            <td>React</td>
+                            <td>JavaScript Framework</td>
+                            <td>High</td>
+                        </tr>
+                        <tr>
+                            <td>Node.js</td>
+                            <td>JavaScript Runtime</td>
+                            <td>High</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tech Info. All rights reserved.</p>
+    </footer>
+</body>
+</html>
