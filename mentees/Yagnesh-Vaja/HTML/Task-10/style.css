@@ -1,0 +1,27 @@
+header {
+    background-color: #4CAF50; 
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.content {
+    border: 2px solid black; 
+    padding: 20px;
+    margin: 20px;
+}
+
+
+section {
+    background-image: url('https://via.placeholder.com/800x400'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 400px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+}
