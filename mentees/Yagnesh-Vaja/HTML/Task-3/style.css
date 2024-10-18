@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    font-size: 36px;
+    color: darkblue;
+}
+
+h2 {
+    font-size: 32px;
+    color: darkgreen;
+}
+
+h3 {
+    font-size: 28px;
+    color: darkred;
+}
+
+
+.para1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: purple;
+}
+
+.para2 {
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    color: orange;
+}
+
+.para3 {
+    font-family: 'Times New Roman', serif;
+    font-size: 20px;
+    color: teal;
+}

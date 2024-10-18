@@ -1,0 +1,23 @@
+table {
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+#error {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}
