@@ -1,0 +1,12 @@
+h2 {
+    font-size: 22px;
+    font-family: 'Times New Roman', serif;
+    margin-bottom: 8px;
+}
+
+section {
+    background-color: #ee82ee;
+    padding: 18px;
+    border-radius: 6px;
+    margin: 18px;
+}
