@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task13</title>
+    <style>
+        body {
+            font-family: Times New Roman, serif;
+            padding: 16px;
+            background-color: #ffffff;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .todo-container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 16px;
+            border-radius: 4px;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"] {
+            width: 60%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px;
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:disabled {
+            background-color: #cccccc;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            padding: 8px;
+            background-color: #eee;
+            margin: 4px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 3px;
+        }
+        .edit-btn,
+        .delete-btn {
+            background-color: #3cb371;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+        .delete-btn {
+            background-color: #6a5acd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task 13 </h1>
+    <h2>My ToDo List</h2>
+    <div class="todo-container">
+        <input type="text" id="todoInput" placeholder="Please enter a task">
+        <button id="addBtn" disabled>Add New Task</button>
+        <ul id="todoList"></ul>
+    </div>
+    <script>
+        let todoArray = JSON.parse(localStorage.getItem('todos')) || [];
+        const todoInput = document.getElementById('todoInput');
+        const addBtn = document.getElementById('addBtn');
+        const todoList = document.getElementById('todoList');
+        displayTodos();
+        todoInput.addEventListener('input', () => {
+            addBtn.disabled = todoInput.value.trim() === '';
+        });
+        addBtn.addEventListener('click', () => {
+            const newTodo = todoInput.value.trim();
+            if (newTodo) {
+                todoArray.push(newTodo);
+                updateLocalStorage();
+                displayTodos();
+                todoInput.value = '';
+                addBtn.disabled = true;
+            }
+        });
+        function displayTodos() {
+            todoList.innerHTML = '';
+            todoArray.forEach((todo, index) => {
+                const li = document.createElement('li');
+                li.innerHTML = `
+            <span>${todo}</span>
+            <div>
+                <button class="edit-btn" onclick="editTask(${index})">Edit</button>
+                <button class="delete-btn" onclick="deleteTask(${index})">Delete</button>
+            </div>
+        `;
+                todoList.appendChild(li);
+            });
+        }
+        window.editTask = function (index) {
+            const newTask = prompt('Edit task:', todoArray[index]);
+            if (newTask !== null && newTask.trim() !== '') {
+                todoArray[index] = newTask.trim();
+                updateLocalStorage();
+                displayTodos();
+            }
+        };
+        window.deleteTask = function (index) {
+            if (confirm('Confirm Delete Operation')) {
+                todoArray.splice(index, 1);
+                updateLocalStorage();
+                displayTodos();
+            }
+        };
+        function updateLocalStorage() {
+            localStorage.setItem('todos', JSON.stringify(todoArray));
+        }
+        window.addEventListener('DOMContentLoaded', displayTodos);
+    </script>
+</body>
+</html>
