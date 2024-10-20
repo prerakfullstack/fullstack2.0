@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3</title>
+</head>
+<body>
+    <h1>Task 3 : Please Check Console for logs</h1>
+    <script>
+        const countries = ["USA", "New Zealand", "Canada", "Germany", "India"];
+        for (let i = 0; i < countries.length; i++) {
+            console.log(countries[i]); 
+        }
+        function table(number) {
+            console.log(`Table for ${number}:`);
+            for (let i = 1; i <= 10; i++) { 
+                const result = number * i; 
+                console.log(`${number} x ${i} = ${result}`); 
+            }
+        }
+        table(9); 
+    </script>
+</body>
+</html>
