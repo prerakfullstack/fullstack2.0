@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task6</title>
+</head>
+<body>
+    <h1>Task 6 : Please Check Console for logs</h1>
+    <script>
+        const arr1 = [1, 2, 3, 4, 5]; 
+        const arr2 = [6, 7, 8]; 
+        const newArray = [...arr1, ...arr2];
+        console.log("New Array:", newArray); 
+
+        const person = {
+            name: "Vivek",
+            age: 26,
+            favoriteLanguages: ["Java", "C++", "Javascript"]
+        };
+        const updatedPerson = {
+            ...person,
+            name: "Sevak" 
+        };
+        console.log("Person:", person); 
+        console.log("Sevak:", updatedPerson); 
+    </script>
+</body>
+</html>
