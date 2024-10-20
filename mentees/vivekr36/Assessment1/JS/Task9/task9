@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task9</title>
+</head>
+<body>
+    <h1>Task 9 : Please Check Console for logs</h1>
+    <script>
+        let now;
+        function currentDateTime() {
+            now = new Date();
+            console.log("Present Date & Time:", now);
+        }
+        currentDateTime();
+        function daysUntilBirthday(birthdayMonth, birthdayDay) {
+            const currentYear = now.getFullYear();
+            let nextBirthday = new Date(currentYear, birthdayMonth - 1, birthdayDay);
+            if (nextBirthday < now) {
+                nextBirthday = new Date(currentYear + 1, birthdayMonth - 1, birthdayDay);
+            }
+            const difference = nextBirthday - now;
+            const daysLeft = Math.ceil(difference / (1000 * 60 * 60 * 24));
+            return daysLeft;
+        }
+        const birthdayMonth = 3;
+        const birthdayDay =30; 
+        const daysLeft = daysUntilBirthday(birthdayMonth, birthdayDay);
+        console.log("Days until next birthday:", daysLeft);
+    </script>
+</body>
+</html>
