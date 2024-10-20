@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task8</title>
+</head>
+<body>
+    <h1>Task 8 : Please Check Console for logs</h1>
+    <script>
+        const arr = [89, 36, 9, 6, 100, 3, 7];
+        const decimal = 9.36;
+
+        const arrSort = arr.sort((a, b) => b - a);
+        console.log("Numbers in Descending Order:", arrSort ); 
+        const filter = arrSort.filter(number => number <= 50);
+        console.log("Numbers less than or equal to 50:", filter); 
+        const sum = filter.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+        console.log("Sum:", sum); 
+
+        const rounded = Math.round(decimal); 
+        const ceiled = Math.ceil(decimal);
+        const flooredNumber = Math.floor(decimal);
+        console.log("Rounded:", rounded);
+        console.log("Ceiled : ", ceiled);
+        console.log("Floor:", flooredNumber);
+    </script>
+</body>
+
+</html>
