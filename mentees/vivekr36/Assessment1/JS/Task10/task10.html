@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>t10</title>
+</head>
+<body>
+    <h1>Task 10 : Please Check Console for logs</h1>
+    <script>
+        const numbers = (a, b) => a + b;
+        const calculateSum = numbers(5, 7);
+        console.log("Sum:", calculateSum); 
+        const userDetails = `{
+            "name": "Vivek",
+            "age": 26,
+            "interests": ["Walking", "Traveling", "Photography"]
+        }`;
+        const userDetailsParsed = JSON.parse(userDetails);
+        console.log("Name : ", userDetailsParsed.name);
+    </script>
+</body>
+</html>
