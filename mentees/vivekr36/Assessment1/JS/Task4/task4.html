@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task4</title>
+</head>
+<body>
+    <h1>Task 4 : Please Check Console for log</h1>
+    <script>
+        function checkIfEvenOrOdd(number) {
+            if (number % 2 === 0) { 
+                console.log("Number is Even");
+            } else { 
+                console.log("Number is Odd");
+            }
+        }
+        checkIfEvenOrOdd(9); 
+        checkIfEvenOrOdd(36);  
+
+        function weekDays(num) {
+            let day;
+
+            switch (num) {
+                case 1:
+                    day = "Monday";
+                    break;
+                case 2:
+                    day = "Tuesday";
+                    break;
+                case 3:
+                    day = "Wednesday";
+                    break;
+                case 4:
+                    day = "Thursday";
+                    break;
+                case 5:
+                    day = "Friday";
+                    break;
+                case 6:
+                    day = "Saturday";
+                    break;
+                case 7:
+                    day = "Sunday";
+                    break;
+                default:
+                    day = "Invalid";
+                    break;
+            }
+            console.log(day);
+        }
+        weekDays(1); 
+        weekDays(6); 
+        weekDays(3); 
+    </script>
+</body>
+</html>

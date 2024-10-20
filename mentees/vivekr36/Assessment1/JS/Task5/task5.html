@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task5</title>
+</head>
+<body>
+    <h1>Task 1 : Please Check Console for logs</h1>
+    <script>
+        function details({ firstName, lastName, age }) {
+            console.log(`Name: ${firstName} ${lastName}, Age: ${age}`);
+        }
+        const person = {
+            firstName: "Vivek",
+            lastName: "Rathod",
+            age: 26
+        };
+        details(person); 
+
+        function calculateSum([num1, num2, num3]) {
+            return num1 + num2 + num3;
+        }
+        const numbers = [36, 9, 6];
+        const total = calculateSum(numbers);
+        console.log("Sum of 3 Numbers:", total);
+    </script>
+</body>
+</html>

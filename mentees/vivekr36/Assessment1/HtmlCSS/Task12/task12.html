@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 12</title>
+    <style>
+        body {
+            font-family: Times New Roman, serif;
+            background-color: #ffffff;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #3cb371;
+            color: white;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li a {
+            margin-left: 20px;
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .column {
+            background-color: #ecf0f1;
+            border: 1px solid #34495e;
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            min-width: 250px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #ff0000;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: auto;
+        }
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .column {
+                flex: 0 0 45%;
+            }
+        }
+        @media (max-width: 768px) {
+            .column {
+                flex: 0 0;
+            }
+            nav ul li a {
+                margin-left: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Swades</div>
+        <nav>
+            <ul>
+                <li><a href="#">Donate</a></li>
+                <li><a href="#">Volunteer</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="column">Impact</div>
+        <div class="column">Progress</div>
+        <div class="column">Reach</div>
+        <div class="column">Highlights</div>
+    </main>
+    <footer>
+        <p>Be a part of the Swades Journey by contacting us.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task 2</title>
+    <style>
+        body {
+            font-family: Times New Roman, serif;
+            background-color: #b4b4b4;
+            padding: 0;
+            margin: 5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-height: 600px;
+            max-width: 1800px;
+            width: 100%;
+        }
+        label {
+            display: block;
+            margin-bottom: 6px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"] {
+            width: 50%;
+            padding: 8px;
+            margin-bottom: 8px;
+            border: 0.5px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="radio"] {
+            margin: 4px 4px 8px 8px;
+        }
+        input[type="checkbox"] {
+            margin-right: 8px;
+        }
+        .hobbies label {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        input[type="submit"] {
+            background-color: #ff0000;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 10%;
+        }
+        input[type="submit"]:hover {
+            background-color: #3cb371;
+        }
+    </style>
+</head>
+<body>
+    <form action="/submit_registration" method="POST">
+        <h2>HPYM 2025 Registration</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Please enter your name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Please enter your email address" required>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Please enter a password" required>
+        <div style="display: flex;">
+            <label>Gender:</label>
+            <br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label>
+        </div>
+        <label>Hobbies:</label>
+        <div class="hobbies">
+            <input type="checkbox" id="walking" name="hobbies" value="walking">
+            <label for="walking">Walking</label>
+            <input type="checkbox" id="photography" name="hobbies" value="photography">
+            <label for="photography">Photography</label>
+            <input type="checkbox" id="travelling" name="hobbies" value="travelling">
+            <label for="travelling">Travelling</label>
+            <input type="checkbox" id="football" name="hobbies" value="football">
+            <label for="football">Football</label>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
