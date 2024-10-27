@@ -8,24 +8,35 @@
 </head>
 
 <body>
+    <!-- creating form -->
     <h1>Registration Form</h1>
     <form action="text.txt" method="post">
+
+        <!-- name input -->
         <p>
             <label for="name">Name:</label>
             <input type="text" id="name" required autofocus autocapitalize="on">
         </p>
+
+        <!-- email input -->
         <p>
             <label for="email">Email:</label>
             <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
         </p>
+
+        <!-- date of birth input -->
         <p>
             <label for="dob">Date of Birth:</label>
             <input type="date" name="dob" id="dob" required>
         </p>
+
+        <!-- password input -->
         <p>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
         </p>
+
+        <!-- gender radio buttons -->
         <p>
             Gender:
             <input type="radio" name="gender" id="male" value="male">
@@ -38,6 +49,7 @@
             <label for="others">Others</label>
         </p>
 
+        <!-- hobbies checkboxes -->
         <p>
             Select your hobbies:
             <ul style="list-style-type: none;">
@@ -64,6 +76,7 @@
             </ul>
         </p>
 
+        <!-- submit button -->
         <p>
             <input type="submit">
         </p>
