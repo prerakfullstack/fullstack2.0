@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="guptadheerajj">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <meta name="description" content="Contains task6">
+    <meta name="keywords" content="html, css, task6, inline, block, span">
+    <title>Task6</title>
+
+    <style>
+        /* display flex to arrange the items inside ul horizontally */
+        ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        /* list style none to remove the default numbering/styling of list */
+        li {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to my website</h1>
+        <nav>
+            <ul>
+                <li>Home</li>
+                
+                <!-- using id selector in anchor tag to redirect user to the respective section on the same web-page after user clicks on it -->
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
+                <li>Logout</li>
+            </ul>
+        </nav>
+    </header>
+    <div id="aboutus">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic maxime vero illo sint nesciunt! Ipsa excepturi
+            voluptatem explicabo ratione expedita quae autem accusamus odit nemo possimus dignissimos cumque nisi facere
+            quas reprehenderit nulla consequuntur ut, incidunt repudiandae. <span>Task6</span> Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Quasi adipisci eos voluptates esse nesciunt magni quisquam veniam repudiandae
+            eius ad! Provident odio quas magnam fugit laudantium voluptate, iste officiis natus voluptates. Molestiae
+            quaerat, odio optio voluptatum incidunt porro neque similique facilis culpa ad! Autem, quod?</p>
+    </div>
+
+    <div id="contactus">
+        <h2>Contact Us</h2>
+        <ul>
+            <li>example@gmail.com</li>
+            <li>+91 9852541589</li>
+            <li>@example_IG</li>
+        </ul>
+    </div>
+</body>
+
+</html>
