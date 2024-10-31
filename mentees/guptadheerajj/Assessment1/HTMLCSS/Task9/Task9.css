@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    background-color: rgb(217, 216, 216);
+}
+
+div:nth-child(1){
+    background-color: cyan;
+}
+
+div:nth-child(2){
+    background-color: yellow;
+}
