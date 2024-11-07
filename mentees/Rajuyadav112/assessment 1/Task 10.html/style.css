@@ -1,0 +1,20 @@
+.header1{
+    background-color: blue;
+}
+.abc{
+    border: 2px solid yellow;
+}
+
+body{
+    background-image: url(image.jpeg1.jfif);
+    background-size:contain;
+    background-position: center;
+    height: 100vh;
+    margin:0%;
+}
+
+.p1{
+    font-style: italic;
+    font-size: 22px;
+    color: yellow;
+}

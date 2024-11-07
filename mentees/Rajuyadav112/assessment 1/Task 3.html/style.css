@@ -1,0 +1,37 @@
+*{
+    margin: 12px;
+    padding:12px;
+    background-color:brown;
+}
+
+.p1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:24px;
+    color: yellow;
+}
+
+.p2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: red;
+}
+
+.p3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    color: gray;
+}
+
+.h1{
+    font-size: large;
+    color: blueviolet;
+}
+.h2{
+    font-size: larger;
+    color:green;
+}
+
+.h3{
+    font-size: x-large;
+    color: yellow;
+}
