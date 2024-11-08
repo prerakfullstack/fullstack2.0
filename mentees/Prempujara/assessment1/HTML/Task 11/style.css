@@ -1,0 +1,16 @@
+.box1{
+    background: blue;
+    margin: 20px;
+    padding: 15px;
+    color: white;
+}
+.box2{
+    background: red;
+    height: 400px;
+    width: 600px;
+}
+.box2 p{
+    color: white;
+    justify-content: center;
+    text-align: center;
+}

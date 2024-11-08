@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 - Forms and Input Types</title>
+</head>
+<body>
+    <h1>This is a Registration Form for students.</h1>
+    <form action="">
+        <div>
+            <label for="fname">
+                First Name:
+                <input type="text" required id="fname" placeholder="Enter your first name">
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="email">
+                Email:
+                <input type="email" required id="email" placeholder="Enter your email">
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="DOB">
+                Date of Birth:
+                <input type="date" required id="DOB" placeholder="Enter your date of birth">
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="password">
+                Password:
+                <input type="password" required id="password" placeholder="Enter your password" maxlength="10">
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="gender">
+            Gender:
+            <input type="radio" name="gender" id="male" required>Male
+            <input type="radio" name="gender" id="female" required >Female 
+            </label>
+         </div>
+        <br>
+        <div>
+            <label for="hobbies">
+                Hobbies:
+                <input type="checkbox" name="hobbies" id="Football" >Football
+                <input type="checkbox" name="hobbies" id="singing" >Singing
+                <input type="checkbox" name="hobbies" id="dancing" >Dancing
+            </label>
+        </div>
+        <br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

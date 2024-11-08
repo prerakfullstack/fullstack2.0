@@ -1,0 +1,27 @@
+
+
+header {
+    background-color: blueviolet; /* Green background color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    border: 2px solid black; /* 2px solid black border */
+    padding: 20px;
+    margin: 20px;
+}
+
+.background-section {
+    background-image: url('https://i.pinimg.com/736x/42/36/f3/4236f3eba4180057150773b6b83e9f83.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 950px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 20px;
+    padding-top: 100px;
+}
