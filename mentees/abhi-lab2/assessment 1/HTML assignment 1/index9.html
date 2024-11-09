@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling </title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            /* padding: 2rem; */
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .internal-style {
+            color: blue;
+            font-size: 18px;
+        }
+
+        #special-paragraph {
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="styles9.css">
+</head>
+
+<body>
+    <h1>CSS Styling Methods</h1>
+
+    <h2>1. Internal CSS</h2>
+    <p class="internal-style">This paragraph is styled using internal CSS (defined in the &lt;style&gt; tag).</p>
+    <p id="special-paragraph">This paragrapth has a special ID and is styled using internal CSS.</p>
+
+    <h2>2. External CSS</h2>
+    <p class="external-style">This paragraph is styled using external CSS ...</p>
+
+    <h2>3. Inline CSS</h2>
+    <p style="color: green; font-weight: bold;">This paragraph is styled using inline CSS.
+    </p>
+
+    <div class="container">
+        <p>This paragraph is inside a container div.</p>
+        <p>It's styled using the external CSS file.</p>
+    </div>
+</body>
+
+</html>

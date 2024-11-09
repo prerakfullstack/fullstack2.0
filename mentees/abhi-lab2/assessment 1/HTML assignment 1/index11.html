@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margins, Padding, Height, and Width Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+        }
+
+        .box {
+            background-color: #e0e0e0;
+            border: 2px solid #333;
+            margin: 20px;
+
+            padding: 15px;
+
+        }
+
+        .fixed-size-section {
+            height: 400px;
+            width: 600px;
+            background-color: #4CAF50;
+            color: white;
+            margin: 20px auto;
+            padding: 12px;
+            overflow: auto;
+
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+            margin: 0;
+        }
+
+        .highlight {
+            /* background-color: blue; */
+            text-decoration: underline;
+            padding: 2px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Spacing and Dimensions Demo</h1>
+
+        <div class="box">
+            <h2>Box with Margin and Padding</h2>
+            <p>This <span class="highlight">div</span> has a <span class="highlight">margin of 20px</span> and a <span
+                    class="highlight">padding of 15px</span>.</p>
+            <p>Margin is the space outside the border, while padding is the space inside the border.</p>
+        </div>
+
+        <section class="fixed-size-section">
+            <h2>Fixed Size Section</h2>
+            <p>This section has a <span class="highlight">height of 400px</span> and a <span class="highlight">width of
+                    600px</span>.</p>
+            <p>Content that exceeds these dimensions will be scrollable.</p>
+            <p>There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is
+                pain... </p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. </p>
+        </section>
+    </div>
+</body>
+
+</html>

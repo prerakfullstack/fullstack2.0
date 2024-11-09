@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layouts &</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 2rem 0;
+        }
+
+        .columns {
+            margin-top: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .column {
+            flex: 1;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        @media screen and (max-width: 1023px) and (min-width: 768px) {
+            .columns {
+                flex-wrap: wrap;
+            }
+
+            .column {
+                flex-basis: calc(50% - 10px);
+            }
+
+            .column:last-child {
+                flex-basis: 100%;
+            }
+        }
+
+        /* mbl View */
+        @media screen and (max-width: 767px) {
+            .header-content {
+                flex-direction: column;
+            }
+
+            nav {
+                margin-top: 1rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+
+            .column {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="https://st2.depositphotos.com/1768926/7866/v/450/depositphotos_78666192-stock-illustration-a-logo-sample-logo-for.jpg"
+                target="_blank">
+                <div class="logo">Logo</div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="columns">
+            <div class="column">
+                <h2>Tab 1</h2>
+                <p>This is the content for Tab 1. It demonstrates the use of Flexbox for responsive layout.</p>
+            </div>
+            <div class="column">
+                <h2>Tab 2</h2>
+                <p>Here's the content for Tab 2. Notice how the layout changes on different screen sizes.</p>
+            </div>
+            <div class="column">
+                <h2>Tab 3</h2>
+                <p>And finally, the content for Tab 3. Flexbox makes it easy to create flexible, responsive designs.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer style="position: fixed; bottom: 0; width: 100%;">
+        <div class="container">
+            <p>&copy; 2024 Flexbox Layout. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

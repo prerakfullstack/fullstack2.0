@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Prerak's Travel Community</title>
+</head>
+
+<body>
+    <h1>Register for Prerak's Travel Community</h1>
+
+    <form id="registrationForm" action="submit_registration" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <fieldset>
+            <legend>Gender:</legend>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Travel Interests:</legend>
+            <input type="checkbox" id="culture" name="interests" value="culture">
+            <label for="culture">Culture & History</label>
+            <input type="checkbox" id="nature" name="interests" value="nature">
+            <label for="nature">Nature & Outdoors</label>
+            <input type="checkbox" id="food" name="interests" value="food">
+            <label for="food">Food & Cuisine</label>
+            <input type="checkbox" id="adventure" name="interests" value="adventure">
+            <label for="adventure">Adventure & Sports</label>
+        </fieldset><br>
+
+        <input type="submit" value="Join the Community">
+    </form>
+    <div id="successMessage" style="display: none; color: green; margin-top: 20px;">
+        Thank you for joining Prerak's Travel Community!
+    </div>
+</body>
+
+</html>
+
+<script>
+    document.getElementById('registrationForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        document.getElementById('successMessage').style.display = 'block';
+        this.style.display = 'none';
+    });
+</script>

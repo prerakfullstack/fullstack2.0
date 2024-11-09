@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Std Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        table {
+            margin: 0 auto;
+            max-width: 600px;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            font-weight: bold;
+            background-color: #f2f2f2;
+        }
+
+        thead th {
+            background-color: #1519dd;
+            color: white;
+            /* color: grey; */
+        }
+
+        tfoot td {
+            font-weight: bold;
+            background-color: #f9f9f9;
+        }
+
+        .highlight {
+            background-color: #ffffd9;
+        }
+
+        h1 {
+            text-align: center;
+            /* text-align: left; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Class 5A Student Information</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Student Details</th>
+            </tr>
+            <tr>
+                <th>Student Name</th>
+                <th>Age</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Prakhar Patel</td>
+                <td>11</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Pratik Kumar Panda</td>
+                <td>10</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <td>Michael Jackson</td>
+                <td rowspan="2">11</td>
+                <td>B+</td>
+            </tr>
+            <tr>
+                <td>Sophia Dave</td>
+                <td>A-</td>
+            </tr>
+            <tr class="highlight">
+                <td>Oliver Desai</td>
+                <td>10</td>
+                <td>A</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Class Average Grade:</td>
+                <td>A-</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

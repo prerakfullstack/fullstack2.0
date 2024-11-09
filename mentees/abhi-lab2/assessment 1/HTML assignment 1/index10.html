@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors, Borders, and Bgrds Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+
+        .image-section {
+            background-image: url('/api/placeholder/800/400');
+            /* background-size: none; */
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .text-section {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Colors</h1>
+    </header>
+
+    <div class="container">
+        <section class="image-section" style="background-image: url('https://picsum.photos/800/400')">
+            <h2> Just a random Background Image</h2>
+        </section>
+
+        <section class="text-section">
+            <h2>About This Demo Task </h2>
+            <p>This webpage shows the use of colors, borders, and backgrounds in CSS:</p>
+            <ul>
+                <li>The header has a green background color.</li>
+                <li>This container div has a 2px solid black border.</li>
+                <li>The section above has a background image with adjusted size and position.</li>
+                <li>This text section has a light gray background color.</li>
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>

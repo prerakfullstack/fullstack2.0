@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            /* max-width: 50em; */
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            /* height: 2; */
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            /* width: 80%; */
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Responsive Video Embeded</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/aunRWSOkmRc" frameborder="0" allow="autoplay; encrypted-media"
+                allowfullscreen></iframe>
+        </div>
+
+        <p>The video above is embedded using an iframe model and will resize responsively based on the width of its
+            container.
+            We cna test using browser tools.
+        </p>
+    </div>
+</body>
+
+</html>
