@@ -1,0 +1,17 @@
+ .a{
+    background-color: red;
+    text-align: center;
+    font-family: monospace;
+ }
+
+ .b{
+    border: 2px solid black;
+    font-size: larger;
+ }
+
+ .logo{
+    background-image: url(box6_image.jpg);
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+ }
