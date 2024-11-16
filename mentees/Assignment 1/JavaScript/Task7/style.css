@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 650px;
+    min-width: 550px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
