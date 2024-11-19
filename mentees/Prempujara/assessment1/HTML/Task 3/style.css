@@ -1,0 +1,40 @@
+.p1 h1 {
+  font-size: 50px;
+  font-family: sans-serif;
+  color: orange;
+ 
+  justify-content: center;
+  display: flex;
+}
+.p1 p {
+  font-size: 20px;
+  font-family: sans-serif;
+  color: rgb(37, 225, 87);
+  padding: 5px 25px 25px 25px;
+}
+.p2 h2{
+    font-size: 35px;
+    font-family: monospace;
+    color: blue;
+    display: flex;
+    justify-content: center;
+}
+.p2 p{
+  font-size: 20px;
+  font-family: monospace;
+  padding: 5px 25px 25px 25px;
+  color: rgb(228, 225, 20);
+}
+.p3 h3{
+  font-size: 30px;
+  font-family: cursive;
+  color: red;
+  display: flex;
+  justify-content: center;
+}
+.p3 p{
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 5px 25px 25px 25px;
+  color: rgb(171, 8, 247);
+}

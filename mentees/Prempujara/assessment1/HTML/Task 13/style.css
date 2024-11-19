@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    grid-template-rows: repeat(3, auto);    
+    gap: 20px;                             
+    padding: 20px; 
+  }
+   .grid-item {
+    background-color: #f4f4f4;
+    border-radius: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 16px;
+  }
+  .grid-item:hover{
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}  
+
+  
+  
