@@ -1,0 +1,12 @@
+body{
+    display: flex column;
+    justify-items: center;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    align-self: center;
+}

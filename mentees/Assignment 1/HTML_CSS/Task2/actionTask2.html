@@ -1,0 +1,59 @@
+x<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body bgcolor="ababab">
+    <h3>You are not Lazy and Filled the form...</h3>
+    <p><b>
+        Following is all the data you have Filled
+    </b></p>
+
+    <p id="result"></p>
+    
+        <p id="test"></p>
+    
+    <h1>Thanks</h1>
+
+    <!-- 
+
+    Desplaying the output  log
+
+    Note**
+    Log is used to just log the desired/perticular errors messages for the debugging perposes
+
+    Displaying op in web page
+
+    Dynamic Display
+
+    document .write -> erases all the content of the current page and writes the Desired o/p.....  
+    innerHTML -> makes changes in existing tags
+    -->
+
+    <script>
+        var data = window.location.search;
+        var params = new URLSearchParams(data);
+        console.log(params)
+        var name = params.get("name");
+        var email = params.get("email");
+        var dob = params.get("dob");
+        var gender = params.get("gender");
+        var hobbiesAll = params.getAll("hobbies");
+        
+        var hobbies = hobbiesAll.join(', ');
+
+
+        var data = "Name: "+name+"<br>"+
+        "Email: "+email+"<br>"+
+        "Date of Birth: "+dob+"<br>"+
+        "Gender: "+gender+"<br>"+
+        "Hobbies: "+hobbies+"<br>"; 
+        
+        document.getElementById("result").innerHTML = data;
+        document.getElementById("test").innerHTML = params;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+</head>
+<body bgcolor="ababab">
+    <h2><b>
+        Basic form Layout
+    </b></h2>
+
+    <form method="get" action="actionTask2.html">
+        <lable>Enter name</lable>
+        <input type="text" name="name" required> <br>
+
+        <label>EnterYour Email Address</label>
+        <input type="email" name="email" required><br>
+
+        <label>Enter Your Date of Birth</label>
+        <input type="date" name="dob" required><br> 
+
+        <label>Enter Desired Password</label>
+        <input type="password" name="password" required><br>
+
+        <lable for="gender">Enter Your Gender:</lable>
+        <input type="radio" name="gender" id="Male" value="Male"><label>Male</label>
+        <input type="radio" name="gender" id="Female" value="Female"><label>Female</label>
+        <input type="radio" name="gender" id="NotToSay" value="Prefer Not To Say" required><label>Prefer Not to Say</label><br>
+
+        <lable for="hobbies">Select Hobbies of Your Choice You Like.</lable>
+        <input type="checkbox" name="hobbies" value="Riding"><lable>Riding </lable> 
+        <input type="checkbox" name="hobbies" value="Driving"><lable>Driving </lable>
+        <input type="checkbox" name="hobbies" value="Reading"><lable>Reading </lable>
+        <input type="checkbox" name="hobbies" value="Dancing"><lable>Dancing </lable>
+        <input type="checkbox" name="hobbies" value="Instrument Playing"><lable>Instrument Playing </lable>
+        <input type="checkbox" name="hobbies" value="Other"><lable>Other </lable>
+
+        <br>
+        <button type="reset">Reset all the Entries</button>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
