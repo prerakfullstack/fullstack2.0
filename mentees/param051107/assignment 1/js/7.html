@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Object Example</title>
+</head>
+<body>
+    <button id="startButton">Start Car</button>
+
+    <script>
+   
+        const car = {
+            make: 'Toyota',
+            model: 'Corolla',
+            year: 2021,
+            startEngine: function() {
+                console.log('Engine started!');
+            }
+        };
+
+        document.getElementById('startButton').addEventListener('click', function() {
+            car.startEngine();
+        });
+    </script>
+    
+    <h1>this code is not workoing i have tried my best</h1>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage with Flexbox</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 15px 20px;
+            color: white;
+        }
+
+        header .logo {
+            font-size: 1.5em;
+        }
+
+        header nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        /* Main content styling */
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .column {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border: 1px solid #ccc;
+            flex: 1 1 calc(33.333% - 20px);
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+      
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 1024px) {
+            .column {
+                flex: 1 1 calc(50% - 20px); 
+            }
+        }
+
+        @media (max-width: 768px) {
+            .column {
+                flex: 1 1 100%; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+ 
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <a href="#tab1">Tab 1</a>
+            <a href="#tab2">Tab 2</a>
+            <a href="#tab3">Tab 3</a>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="column">Tab 1</div>
+        <div class="column">Tab 2</div>
+        <div class="column">Tab 3</div>
+    </div>
+
+    <footer>
+        &copy; 2024 Your Website. All rights reserved.
+    </footer>
+
+</body>
+</html>

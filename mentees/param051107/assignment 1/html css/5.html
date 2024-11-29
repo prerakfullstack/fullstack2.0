@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data Table</title>
+    <style>
+        table {
+            width: 60%;
+            border-collapse: collapse; 
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Information Table</h1>
+    <table>
+
+        <thead>
+            <tr>
+                <th rowspan="2">Student Name</th>
+                <th colspan="2">Details</th>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+       
+        <tbody>
+            <tr>
+                <td>John Smith</td>
+                <td>15</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Jane Doe</td>
+                <td>14</td>
+                <td>B+</td>
+            </tr>
+            <tr>
+                <td>Michael Brown</td>
+                <td>16</td>
+                <td>A-</td>
+            </tr>
+        </tbody>
+    
+        <tfoot>
+            <tr>
+                <td colspan="3">End of Student Records</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
