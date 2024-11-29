@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling with CSS</title>
+    
+    
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+            margin: 20px;
+        }
+
+       
+        .highlight {
+            color: darkblue;
+            background-color: lightyellow;
+            padding: 10px;
+        }
+
+    /
+        #header {
+            font-size: 2em;
+            color: green;
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        
+        p {
+            font-size: 1.2em;
+            color: black;
+        }
+    </style>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="header">Welcome to My Page</div>
+
+    <p>This is a paragraph styled with an element selector. It has a default font size and color.</p>
+
+    <p class="highlight">This is a highlighted paragraph styled with a class selector. It has a different background and text color.</p>
+
+    <p style="color: red; font-size: 1.5em; background-color: lightblue;">This is a paragraph with inline styles. It overrides other CSS rules.</p>
+
+</body>
+</html>
