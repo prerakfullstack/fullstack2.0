@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #todoApp {
+            width: 300px;
+            margin: 0 auto;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 5px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        button {
+            background-color: #e32619;
+            color: white;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+        }
+        
+        input[type="text"] {
+            width: 200px;
+            padding: 5px;
+        }
+        #addTodoButton {
+            padding: 5px 10px;
+            margin-top: 10px;
+            background-color: #3ca63f;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="todoApp">
+        <h2>Todo List</h2>
+        <input type="text" id="todoInput" placeholder="Add a new todo">
+        <button id="addTodoButton">Add Todo</button>
+        <ul id="todoList">
+        </ul>
+    </div>
+
+    <script>
+        function loadTodos() {
+            const todos = JSON.parse(localStorage.getItem("todos")) || []; //get data from local storage
+            const todoList = document.getElementById("todoList");
+            todoList.innerHTML = "";  
+            todos.forEach((todo, index) => {
+                const li = document.createElement("li");
+                li.innerHTML = `
+                    <span contenteditable="true" onblur="editTodo(event, ${index})">${todo}</span>
+                    <button onclick="deleteTodo(${index})">Delete</button>
+                `;
+                todoList.appendChild(li);
+            });
+        }
+
+        // add into list
+        function addTodo() {
+            const todoInput = document.getElementById("todoInput");
+            const newTodo = todoInput.value.trim();
+            if (newTodo) {
+                const todos = JSON.parse(localStorage.getItem("todos")) || [];
+                todos.push(newTodo);
+                localStorage.setItem("todos", JSON.stringify(todos));
+                todoInput.value = "";  
+                loadTodos(); 
+            }
+        }
+
+        //  delete
+        function deleteTodo(index) {
+            const todos = JSON.parse(localStorage.getItem("todos")) || [];
+            todos.splice(index, 1);  // delete
+            localStorage.setItem("todos", JSON.stringify(todos));  
+            loadTodos(); 
+        }
+
+        // edit 
+        function editTodo(event, index) {
+            const todos = JSON.parse(localStorage.getItem("todos")) || [];
+            todos[index] = event.target.innerText.trim();  
+            localStorage.setItem("todos", JSON.stringify(todos));  
+        }
+
+        document.getElementById("addTodoButton").addEventListener("click", addTodo);
+
+        loadTodos();
+    </script>
+</body>
+</html>
