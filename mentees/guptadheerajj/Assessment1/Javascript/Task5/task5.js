@@ -13,7 +13,7 @@ function desconstructObject(obj) {
 desconstructObject(personDetails);
 
 //Q2. Array destructuring
-let array = [2, 3, 4];
+const array = [2, 3, 4];
 function sum(array) {
     let [num1, num2, num3] = array;
     summation = num1 + num2 + num3;
