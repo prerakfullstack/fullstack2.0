@@ -12,7 +12,7 @@ let myJsonString = `{
     "interests": "Propgramming"
 }`;
 
-let userProfile = JSON.parse(myJson);
+let userProfile = JSON.parse(myJsonString);
 
 console.log(userProfile["name"]);
 console.log(userProfile["age"]);
