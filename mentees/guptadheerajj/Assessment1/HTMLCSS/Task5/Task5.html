@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This page contains task5">
+    <meta name="author" content="guptadheerajj">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task4</title>
+
+    <style>
+        table{
+            border: 2px solid black;
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            padding: 4px 8px;
+            vertical-align: bottom;
+            text-align: center;
+            border: 1px solid black;
+        }
+        
+        /*did this to practice nth child selector */
+        thead tr:nth-child(1){
+            background-color: greenyellow;
+        }
+        thead tr:nth-child(2) th:nth-child(1){
+            background-color: cyan;
+        }
+        thead tr:nth-child(2) th:nth-child(2){
+            background-color: orange;
+        }
+
+        thead tr:nth-child(2){
+            border-bottom: 3px solid gray;
+        }
+        tfoot tr:nth-child(1){
+            border-top: 3px solid gray;
+        }
+        
+        /* used inline css to add caption to bottom of table and internal css to add text decoration,etc.*/
+        caption{
+            text-decoration: underline;
+            padding-top: 6px;
+            font-weight: bold;
+        }
+
+        /* makes every second row gray to increase readabilty of table */
+        tbody tr:nth-child(2n){
+            background-color: rgb(203, 199, 199);
+        }
+
+        tfoot td{
+            font-weight: bold;
+            background-color: greenyellow;
+        }
+
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption style="caption-side: bottom;">Game Table</caption>
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2">Name</th>
+                <th scope="colgroup" colspan="2">Place</th>
+                <th scope="col" rowspan="2">Animal</th>
+                <th scope="col" rowspan="2">Things</th>
+            </tr>
+            <tr>
+                <th scope="col">Country</th>
+                <th scope="col">State</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dheeraj</td>
+                <td>Denmark</td>
+                <td>Dehradoon</td>
+                <td>Duck</td>
+                <td>Dryer</td>
+            </tr>
+            <tr>
+                <td>Ankit</td>
+                <td>Armenia</td>
+                <td>Assam</td>
+                <td>Antipole</td>
+                <td>Arm</td>
+            </tr>
+            <tr>
+                <td>Dheeraj</td>
+                <td>Denmark</td>
+                <td>Dehradoon</td>
+                <td>Duck</td>
+                <td>Dryer</td>
+            </tr>
+            <tr>
+                <td>Ankit</td>
+                <td>Armenia</td>
+                <td>Assam</td>
+                <td>Antipole</td>
+                <td>Arm</td>
+            </tr>
+            <tr>
+                <td>Dheeraj</td>
+                <td>Denmark</td>
+                <td>Dehradoon</td>
+                <td>Duck</td>
+                <td>Dryer</td>
+            </tr>
+            <tr>
+                <td>Ankit</td>
+                <td>Armenia</td>
+                <td>Assam</td>
+                <td>Antipole</td>
+                <td>Arm</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Total Points:</td>
+                <td>4</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

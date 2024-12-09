@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMLCSS_Task2</title>
+</head>
+
+<body>
+    <!-- creating form -->
+    <h1>Registration Form</h1>
+    <form action="text.txt" method="post">
+
+        <!-- name input -->
+        <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required autofocus autocapitalize="on">
+        </p>
+
+        <!-- email input -->
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+        </p>
+
+        <!-- date of birth input -->
+        <p>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob" required>
+        </p>
+
+        <!-- password input -->
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </p>
+
+        <!-- gender radio buttons -->
+        <p>
+            Gender:
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+
+            <input type="radio" name="gender" id="others" value="others">
+            <label for="others">Others</label>
+        </p>
+
+        <!-- hobbies checkboxes -->
+        <p>
+            Select your hobbies:
+            <ul style="list-style-type: none;">
+                <li>
+                    <input type="checkbox" name="hobby" id="drawing" value="drawing">
+                    <label for="drawing">Drawing</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="hobby" id="dancing" value="dancing">
+                    <label for="dancing">Dancing</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="hobby" id="cricket" value="cricket">
+                    <label for="cricket">Cricket</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="hobby" id="singing" value="singing">
+                    <label for="singing">Singing</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="hobby" id="coding" value="coding">
+                    <label for="cricket">Coding</label>
+                </li>
+            </ul>
+        </p>
+
+        <!-- submit button -->
+        <p>
+            <input type="submit">
+        </p>
+    </form>
+</body>
+
+</html>
