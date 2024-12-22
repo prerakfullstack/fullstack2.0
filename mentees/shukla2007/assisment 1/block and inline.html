@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webpage Layout</title>
+  <style>
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      background-color:grey;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 10px 15px;
+      display: block;
+    }
+
+    .content .left,
+    .content .right {
+      width: 48%;
+    }
+
+    .content .left p {
+      margin: 10px 0;
+    }
+
+    .content .right h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+   
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer span {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <header>
+    <h1>My Webpage</h1>
+  </header>
+
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  
+  <div class="content">
+    <div class="left">
+      <h2>Welcome to My Webpage</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span>This is an example of inline content within a block-level element.</span></p>
+      <p>Nulla facilisi. Integer sit amet sem nec libero auctor convallis.</p>
+    </div>
+    <div class="right">
+      <h2>Latest News</h2>
+      <p><span>December 16, 2024:</span> The website layout has been updated to improve user experience!</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2024 My Webpage | All rights reserved. <span>Designed by Me</span></p>
+  </footer>
+
+</body>
+</html>
