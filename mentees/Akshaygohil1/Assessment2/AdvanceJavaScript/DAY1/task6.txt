@@ -1,0 +1,100 @@
+How JavaScript Runs: Overview of Browser Environments and Node.js Runtime
+JavaScript is a versatile, high-level, interpreted programming language. It is designed to run in multiple environments, primarily in web browsers and in server-side applications with Node.js. Each environment has a unique architecture, but they share common components essential to executing JavaScript code.
+
+1. JavaScript in the Browser
+When JavaScript runs in the browser, it is executed within the JavaScript Engine of the browser. Popular examples include:
+
+V8 (used in Chrome and Edge)
+SpiderMonkey (used in Firefox)
+JavaScriptCore (used in Safari)
+Components of the Browser Environment
+The browser environment includes the following components:
+
+JavaScript Engine:
+
+Parses and executes JavaScript code.
+Converts JavaScript into machine code for execution.
+Example: Chrome's V8 engine.
+Web APIs:
+
+Provided by the browser to allow JavaScript to interact with the environment (e.g., DOM, Fetch API, Geolocation API).
+These APIs are not part of JavaScript itself but are accessible in browser environments.
+Example:
+
+javascript
+Copy code
+document.querySelector('h1'); // DOM API
+fetch('https://api.example.com/data'); // Fetch API
+Event Loop:
+
+A mechanism that allows JavaScript to handle asynchronous tasks.
+It processes tasks from the call stack and the callback queue.
+Callback Queue and Microtask Queue:
+
+Holds asynchronous tasks and microtasks (e.g., setTimeout, Promise.then) for execution.
+Rendering Engine:
+
+Handles rendering of HTML and CSS, integrating dynamic changes made via JavaScript.
+
+-------------------------------------------------------
+
+2. Node.js Runtime
+Node.js is a JavaScript runtime built on the V8 engine that allows JavaScript to run outside the browser. It is primarily used for building server-side applications.
+
+Components of the Node.js Environment
+V8 Engine:
+
+Executes JavaScript code.
+Compiles JavaScript to native machine code for better performance.
+Node.js APIs:
+
+Provides additional functionality not available in browsers (e.g., file system access, networking).
+Examples:
+javascript
+Copy code
+const fs = require('fs');
+fs.writeFileSync('example.txt', 'Hello, Node.js!');
+libuv:
+
+A library that provides an event-driven, asynchronous I/O model.
+Powers Node.js's event loop and asynchronous capabilities.
+Event Loop:
+
+Similar to the browser, Node.js uses an event loop to handle asynchronous tasks.
+Includes a thread pool for executing tasks like file system operations or network requests.
+NPM (Node Package Manager):
+
+A package manager for Node.js that allows developers to install and manage libraries.
+
+---------------------------------------------------------
+
+3. JavaScript Execution Flow
+Both browser and Node.js environments execute JavaScript through the following steps:
+
+Parsing:
+
+The JavaScript engine parses the code into an Abstract Syntax Tree (AST).
+Compilation:
+
+Modern engines like V8 use Just-In-Time (JIT) compilation to convert the AST into optimized machine code.
+Execution:
+
+The machine code is executed, and the results are provided to the environment (browser or Node.js).
+
+
+------------------------------------------------------
+
+4. The Event Loop
+The event loop is a key component in both environments, managing asynchronous tasks and ensuring non-blocking behavior.
+
+Simplified Flow:
+Call Stack:
+
+JavaScript code is executed line-by-line. Function calls are pushed to the stack.
+Task Queues:
+
+Macro-task queue: Holds tasks like setTimeout, setInterval.
+Micro-task queue: Holds tasks like Promise.then and MutationObserver.
+Execution:
+
+The event loop ensures that the stack is empty before processing tasks from the queues.

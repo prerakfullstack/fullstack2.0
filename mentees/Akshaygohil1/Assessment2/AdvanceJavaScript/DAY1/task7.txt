@@ -1,0 +1,85 @@
+Differences Between Interpreted and Compiled Languages
+Programming languages are often categorized as interpreted or compiled based on how their source code is translated into machine code that can be executed by a computer. Here's a detailed comparison:
+
+1. Definition
+Interpreted Languages:
+Code is executed line-by-line by an interpreter at runtime.
+The translation from source code to machine code happens dynamically, during execution.
+Compiled Languages:
+Source code is transformed into machine code (or bytecode) by a compiler before execution.
+The resulting executable file can be run directly by the computer's hardware.
+
+----------------------------------------------------------------------------------------
+2. Translation Process
+Aspect	Interpreted	Compiled
+Translation - 	Happens at runtime via an interpreter.        |	Happens before execution via a compiler.
+Output	    -   No standalone file; execution occurs directly.|	Produces a standalone binary executable.
+
+----------------------------------------------------------------------------------------
+
+3. Speed and Performance
+Interpreted Languages:
+Slower execution since the code is translated line-by-line at runtime.
+Suitable for scenarios requiring platform independence or dynamic behavior.
+Compiled Languages:
+Faster execution because the machine code is precompiled and optimized.
+Ideal for performance-critical applications like operating systems or games.
+
+----------------------------------------------------------------------------------------
+
+4. Error Handling
+Interpreted Languages:
+Errors are detected during runtime.
+Useful for rapid prototyping since you can test and debug code interactively.
+Compiled Languages:
+Errors are caught during the compilation stage.
+Results in fewer runtime errors, as most issues are resolved beforehand.
+5. Examples
+Interpreted Languages	Compiled Languages
+JavaScript, Python, Ruby, PHP	C, C++, Rust, Go, Fortran
+
+----------------------------------------------------------------------------------------
+
+6. Portability
+Interpreted Languages:
+Platform-independent; the interpreter is responsible for running the code.
+Example: JavaScript runs on any browser with a JavaScript engine.
+Compiled Languages:
+Platform-specific; you need to recompile the code for different systems.
+Example: A C program compiled on Windows won't run on Linux without recompilation.
+
+----------------------------------------------------------------------------------------
+
+7. Flexibility
+Interpreted Languages:
+Often more dynamic, allowing for features like dynamic typing and runtime modifications.
+Example: In Python, you can define and execute new code at runtime.
+Compiled Languages:
+Typically more static, with stricter type systems that enhance performance and stability.
+Example: C requires explicit type declarations.
+
+----------------------------------------------------------------------------------------
+
+8. Hybrid Approach
+Some languages blur the lines between interpreted and compiled:
+
+Java: Compiled into bytecode, which is then interpreted (or JIT-compiled) by the JVM.
+JavaScript: Interpreted in older implementations but often Just-In-Time (JIT) compiled in modern engines like V8.
+
+----------------------------------------------------------------------------------------
+
+9. Comparison Table
+Feature	Interpreted	Compiled
+Execution Speed	Slower	Faster
+Translation Time	At runtime	Before runtime
+Error Detection	At runtime	During compilation
+Output	No executable; needs interpreter	Produces an executable file
+Portability	High (platform-independent)	Limited (requires platform-specific compilation)
+Examples	Python, JavaScript, Ruby	C, C++, Rust
+
+----------------------------------------------------------------------------------------
+
+Conclusion
+Interpreted Languages: Offer flexibility, platform independence, and simplicity for rapid development but at the cost of slower performance.
+Compiled Languages: Deliver optimized performance and lower runtime errors, making them ideal for resource-intensive applications.
+Modern programming often combines both approaches to leverage the strengths of each.
